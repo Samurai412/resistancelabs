@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WIP - Resistance Labs</title>
+    <meta name="description" content="Work in Progress - Something is coming from Resistance Labs.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-bg: #000000;
+            --color-bg-elevated: #0a0a0a;
+            --color-accent: #ff2a2a;
+            --color-accent-glow: rgba(255, 42, 42, 0.4);
+            --color-cyan: #00ffff;
+            --color-text: #f0f0f0;
+            --color-text-dim: #666666;
+            --font-mono: 'Space Mono', monospace;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-mono);
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Subtle background glow */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(ellipse at center, rgba(255, 42, 42, 0.08) 0%, transparent 60%);
+        }
+
+        /* Scan lines overlay */
+        body::after {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(0deg,
+                    transparent,
+                    transparent 2px,
+                    rgba(0, 0, 0, 0.1) 2px,
+                    rgba(0, 0, 0, 0.1) 4px);
+            pointer-events: none;
+            z-index: 100;
+        }
+
+        .container {
+            text-align: center;
+            z-index: 1;
+            padding: 2rem;
+        }
+
+        /* Main logo - Resistance Labs with aggressive glitch */
+        .logo {
+            font-size: clamp(1.5rem, 5vw, 3rem);
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--color-text);
+            margin-bottom: 2rem;
+            position: relative;
+            display: inline-block;
+            animation: flicker 4s infinite;
+        }
+
+        /* Glitch layers */
+        .logo::before,
+        .logo::after {
+            content: 'RESISTANCE LABS';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--color-bg);
+        }
+
+        .logo::before {
+            color: var(--color-accent);
+            animation: glitch-1 2.5s infinite steps(1);
+            clip-path: polygon(0 0, 100% 0, 100% 40%, 0 40%);
+        }
+
+        .logo::after {
+            color: var(--color-cyan);
+            animation: glitch-2 3s infinite steps(1);
+            clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
+        }
+
+        @keyframes glitch-1 {
+
+            0%,
+            100% {
+                transform: translateX(0);
+            }
+
+            5% {
+                transform: translateX(-10px) skewX(-5deg);
+            }
+
+            6% {
+                transform: translateX(8px) skewX(3deg);
+            }
+
+            7% {
+                transform: translateX(-5px);
+            }
+
+            8%,
+            40% {
+                transform: translateX(0);
+            }
+
+            41% {
+                transform: translateX(6px) skewX(-3deg);
+            }
+
+            42% {
+                transform: translateX(-12px) skewX(5deg);
+            }
+
+            43% {
+                transform: translateX(3px);
+            }
+
+            44%,
+            70% {
+                transform: translateX(0);
+            }
+
+            71% {
+                transform: translateX(-8px) skewX(2deg);
+            }
+
+            72% {
+                transform: translateX(10px) skewX(-4deg);
+            }
+
+            73% {
+                transform: translateX(-4px);
+            }
+
+            74% {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes glitch-2 {
+
+            0%,
+            100% {
+                transform: translateX(0);
+            }
+
+            10% {
+                transform: translateX(8px) skewX(4deg);
+            }
+
+            11% {
+                transform: translateX(-12px) skewX(-6deg);
+            }
+
+            12% {
+                transform: translateX(5px);
+            }
+
+            13%,
+            35% {
+                transform: translateX(0);
+            }
+
+            36% {
+                transform: translateX(-9px) skewX(3deg);
+            }
+
+            37% {
+                transform: translateX(11px) skewX(-5deg);
+            }
+
+            38% {
+                transform: translateX(-3px);
+            }
+
+            39%,
+            65% {
+                transform: translateX(0);
+            }
+
+            66% {
+                transform: translateX(7px) skewX(-2deg);
+            }
+
+            67% {
+                transform: translateX(-10px) skewX(4deg);
+            }
+
+            68% {
+                transform: translateX(4px);
+            }
+
+            69% {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes flicker {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            90% {
+                opacity: 1;
+            }
+
+            91% {
+                opacity: 0.6;
+            }
+
+            92% {
+                opacity: 1;
+            }
+
+            93% {
+                opacity: 0.8;
+            }
+
+            94% {
+                opacity: 1;
+            }
+
+            95% {
+                opacity: 0.7;
+            }
+
+            96% {
+                opacity: 1;
+            }
+        }
+
+
+        .status {
+            font-size: 0.875rem;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: var(--color-text-dim);
+            margin-bottom: 3rem;
+        }
+
+        .status-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem 1.5rem;
+            border: 1px solid var(--color-accent);
+            background: transparent;
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--color-accent);
+            border-radius: 50%;
+            animation: blink 1.5s ease-in-out infinite;
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.3;
+            }
+        }
+
+        .status-text {
+            font-size: 0.75rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--color-text);
+        }
+
+        .author {
+            position: fixed;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.75rem;
+            color: var(--color-text-dim);
+            letter-spacing: 0.1em;
+        }
+
+        /* Decorative corner accents */
+        .corner {
+            position: fixed;
+            width: 30px;
+            height: 30px;
+            border-color: var(--color-accent);
+            border-style: solid;
+            opacity: 0.3;
+        }
+
+        .corner-tl {
+            top: 20px;
+            left: 20px;
+            border-width: 2px 0 0 2px;
+        }
+
+        .corner-tr {
+            top: 20px;
+            right: 20px;
+            border-width: 2px 2px 0 0;
+        }
+
+        .corner-bl {
+            bottom: 20px;
+            left: 20px;
+            border-width: 0 0 2px 2px;
+        }
+
+        .corner-br {
+            bottom: 20px;
+            right: 20px;
+            border-width: 0 2px 2px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Corner accents -->
+    <div class="corner corner-tl"></div>
+    <div class="corner corner-tr"></div>
+    <div class="corner corner-bl"></div>
+    <div class="corner corner-br"></div>
+
+    <!-- Main content -->
+    <div class="container">
+        <h1 class="logo">RESISTANCE LABS</h1>
+        <p class="status">Work in Progress</p>
+        <div class="status-badge">
+            <div class="status-dot"></div>
+            <span class="status-text">Building weapons...</span>
+        </div>
+    </div>
+
+    <!-- Subtle author credit -->
+    <p class="author">— Samurai</p>
+</body>
+
+</html>

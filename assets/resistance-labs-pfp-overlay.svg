@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Resistance Labs transparent PFP overlay</title>
+  <desc id="desc">A transparent broken-link avatar overlay with neon rupture and small code mark.</desc>
+  <defs>
+    <radialGradient id="rupture-glow" cx="50%" cy="50%" r="34%">
+      <stop offset="0" stop-color="#ff6b1a" stop-opacity="0.62"/>
+      <stop offset="0.44" stop-color="#00d8ff" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#a949ff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="link-shadow" x="-30%" y="-30%" width="160%" height="160%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000000" flood-opacity="0.78"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="2" flood-color="#f3efe4" flood-opacity="0.14"/>
+    </filter>
+    <filter id="pixel-glow" x="-100%" y="-100%" width="300%" height="300%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect x="0" y="0" width="1024" height="1024" fill="url(#rupture-glow)"/>
+
+  <g transform="translate(512 512) rotate(-24)" filter="url(#link-shadow)">
+    <path d="M-410 0
+             a150 88 0 0 1 150 -88
+             h238
+             a150 88 0 0 1 0 176
+             h-238
+             a150 88 0 0 1 -150 -88"
+          fill="none" stroke="#020202" stroke-width="112" stroke-linecap="round"/>
+    <path d="M154 -88
+             h238
+             a150 88 0 0 1 0 176
+             h-238
+             a150 88 0 0 1 0 -176"
+          fill="none" stroke="#020202" stroke-width="112" stroke-linecap="round"/>
+  </g>
+
+  <g filter="url(#pixel-glow)">
+    <path d="M384 526 L468 480 L438 552 L524 512 L493 598 L645 492"
+          fill="none" stroke="#ff6b1a" stroke-width="14" stroke-linecap="square" stroke-linejoin="miter"/>
+    <path d="M326 540 H708" fill="none" stroke="#00d8ff" stroke-width="6" opacity="0.86"/>
+    <path d="M380 582 H620" fill="none" stroke="#9d35ff" stroke-width="6" opacity="0.78"/>
+    <path d="M428 445 H696" fill="none" stroke="#ff6b1a" stroke-width="6" opacity="0.76"/>
+
+    <rect x="312" y="548" width="16" height="16" fill="#ff42b3"/>
+    <rect x="348" y="506" width="28" height="28" fill="#00d8ff"/>
+    <rect x="390" y="595" width="38" height="38" fill="#ff6b1a"/>
+    <rect x="444" y="486" width="20" height="20" fill="#b34cff"/>
+    <rect x="482" y="544" width="28" height="28" fill="#25f0c8"/>
+    <rect x="528" y="468" width="18" height="18" fill="#00d8ff"/>
+    <rect x="572" y="574" width="34" height="34" fill="#8b35ff"/>
+    <rect x="630" y="462" width="26" height="26" fill="#ff6b1a"/>
+    <rect x="674" y="524" width="18" height="18" fill="#00d8ff"/>
+    <rect x="724" y="576" width="14" height="14" fill="#9d35ff"/>
+    <rect x="282" y="610" width="12" height="12" fill="#ff6b1a"/>
+    <rect x="708" y="428" width="12" height="12" fill="#ff42b3"/>
+  </g>
+
+  <g opacity="0.9">
+    <rect x="812" y="812" width="44" height="44" fill="none" stroke="#ff5a36" stroke-width="5"/>
+    <rect x="864" y="812" width="44" height="44" fill="none" stroke="#ff5a36" stroke-width="5"/>
+    <rect x="812" y="864" width="44" height="44" fill="none" stroke="#ff5a36" stroke-width="5"/>
+    <rect x="864" y="864" width="44" height="44" fill="none" stroke="#ff5a36" stroke-width="5"/>
+  </g>
+</svg>

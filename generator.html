@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resistor Mark | Resistance Labs</title>
+    <meta name="description" content="Generate a Resistance Labs broken-link Resistor mark for your profile picture.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="generator.css">
+</head>
+
+<body>
+    <nav class="nav">
+        <a href="index.html" class="brand-lockup">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <span>Resistance Labs</span>
+        </a>
+        <a href="index.html#instruments" class="nav-back">Back to Instruments</a>
+    </nav>
+
+    <main class="generator-page">
+        <section class="generator-hero">
+            <p class="section-label">Resistor Mark</p>
+            <h1>Sever the loop.</h1>
+            <p class="generator-subtitle">Turn your profile image into a Resistance Labs mark: a dark portrait interrupted by the clean Severed Loop symbol.</p>
+        </section>
+
+        <section class="generator-container">
+            <div class="generator-workspace">
+                <div class="upload-area" id="upload-area">
+                    <div class="upload-content">
+                        <div class="upload-icon" aria-hidden="true"></div>
+                        <p class="upload-text">Drop your photo here</p>
+                        <p class="upload-subtext">or click to select an image</p>
+                        <input type="file" id="file-input" accept="image/*" hidden>
+                    </div>
+                </div>
+
+                <div class="preview-area" id="preview-area" style="display: none;">
+                    <canvas id="canvas"></canvas>
+                </div>
+
+                <div class="controls" id="controls" style="display: none;">
+                    <div class="control-group">
+                        <label class="control-label" for="intensity">
+                            <span>Mark scale</span>
+                            <output id="intensity-value" for="intensity">60%</output>
+                        </label>
+                        <input type="range" id="intensity" min="0" max="100" value="60" class="slider">
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="static-amount">
+                            <span>Backlight</span>
+                            <output id="backlight-value" for="static-amount">60%</output>
+                        </label>
+                        <input type="range" id="static-amount" min="0" max="100" value="60" class="slider">
+                    </div>
+                    <div class="button-group">
+                        <button class="btn btn-secondary" id="reset-btn">Reset</button>
+                        <button class="btn btn-primary" id="download-btn">Download</button>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="generator-info">
+                <h3 class="info-title">Severed Loop</h3>
+                <div class="info-meaning">
+                    <div class="meaning-row">
+                        <span class="meaning-color black"></span>
+                        <span class="meaning-text">The severed feed loop</span>
+                    </div>
+                    <div class="meaning-row">
+                        <span class="meaning-color static"></span>
+                        <span class="meaning-text">The center break</span>
+                    </div>
+                    <div class="meaning-row">
+                        <span class="meaning-color code"></span>
+                        <span class="meaning-text">The Resistance Labs code mark</span>
+                    </div>
+                </div>
+                <p class="info-text">The portrait stays visible, but the identity is carried by the same primary mark every time.</p>
+            </aside>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div>
+                <div class="footer-logo">Resistance Labs</div>
+                <p>Tools and rituals for deliberate attention.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="generator.js?v=severed-loop-sliders-3"></script>
+</body>
+
+</html>

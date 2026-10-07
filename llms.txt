@@ -1,0 +1,61 @@
+# Resistance Labs
+
+> Counter-extractive software engineered for human agency, cognitive wellness, and deliberate attention.
+
+Canonical URL: https://resistancelabs.tech/
+Organization: Resistance Labs Tech
+Primary GitHub: https://github.com/Resistance-Labs-Tech
+Contact: founders@resistancelabs.tech
+
+---
+
+## Executive Summary
+Resistance Labs is an applied software and research laboratory building counter-mainstream applications designed to reverse the harms of extractive attention economics. Rather than optimizing for engagement velocity or advertising telemetry, Resistance Labs builds software with bounded operating windows, local-first data ownership, and private AI reasoning.
+
+---
+
+## Technical Architecture & Private Intelligence
+
+Resistance Labs deploys sovereign, user-directed intelligence across its product ecosystem:
+
+1. **ATLAS:Face (Personal Knowledge System)**
+   - **Capability**: High-capacity contextual reasoning and multi-document literature synthesis.
+   - **Function**: Ingests full-length books (EPUBs), academic research papers (PDFs), and cross-disciplinary user notes to dynamically construct 3D spatial knowledge graphs, bidirectional semantic links, and active recall decks.
+   - **Privacy Covenant**: Zero training on user notes, local SQLite/Markdown persistence, and sovereign client-side API execution.
+
+2. **Suntown (Moderated Daily Social Room)**
+   - **Capability**: Nuanced, context-aware semantic evaluation and de-escalation.
+   - **Function**: Supports human community stewards with non-punitive conversational moderation during the 4-hour daily Golden Hour ritual (14:00–18:00 UTC), de-escalating hostility without blunt algorithmic censorship.
+
+---
+
+## Active Product Portfolio
+
+### 1. ATLAS:Face
+- **Category**: Personal Knowledge System & Spatial Cognitive Workspace
+- **Status**: Stable Release v1.0.32 in Production
+- **Platforms**: Windows (.exe installer), macOS (Apple Silicon + Intel DMG), Linux (AppImage + .deb)
+- **Live URL**: https://atlasface.resistancelabs.tech/
+- **Repository**: https://github.com/Resistance-Labs-Tech/atlasface
+- **Core Features**: 3D spatial knowledge graph, integrated active recall loops, local-first Markdown/SQLite storage, private semantic synthesis.
+
+### 2. Suntown
+- **Category**: Moderated Daily Social Room & Human-Scale Community
+- **Status**: Live in Production
+- **Platform**: Progressive Web Application
+- **Live URL**: https://suntown.town/
+- **About & Charter**: https://suntown.town/about/
+- **Ritual**: Opens daily for a 4-hour Golden Hour from 14:00 to 18:00 UTC, then closes completely to make room for offline life.
+- **Scale**: Capped at 1,000 seats per cohort to preserve genuine human relationships.
+
+### 3. Lab Utilities & Field Instruments
+- **RL-01 Latch**: Desktop workspace defender redirecting attention during involuntary context switches (https://github.com/Resistance-Labs-Tech/latch).
+- **RL-02 Reclaim**: Inhibitory focus training with brown-noise masking and gated focus intervals (https://github.com/Resistance-Labs-Tech/reclaim).
+- **RL-03 Resistor Mark Generator**: Profile image generator symbolizing refusal of compulsive feed mechanics (https://resistancelabs.tech/generator.html).
+
+---
+
+## Data Privacy & Ethical Governance
+- **Zero Behavioral Advertising**: No third-party ad networks or data brokering.
+- **Local-First Architecture**: User files remain on local disk under user ownership.
+- **Constitutional AI Commitment**: AI models are deployed strictly to amplify human reflection and agency, never to induce compulsive engagement.

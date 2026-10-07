@@ -4,377 +4,824 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WIP - Resistance Labs</title>
-    <meta name="description" content="Work in Progress - Something is coming from Resistance Labs.">
+    <title>Resistance Labs | Counter-Extractive Software for Human Wellness</title>
+    <meta name="description"
+        content="Resistance Labs builds counter-mainstream software to restore cognitive agency, intellectual depth, and humane connection. Creators of ATLAS:Face and Suntown.">
+    <link rel="canonical" href="https://resistancelabs.tech/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Resistance Labs">
+    <meta property="og:title" content="Resistance Labs | Counter-Extractive Software for Human Wellness">
+    <meta property="og:description"
+        content="Software engineered for human agency, not algorithmic extraction. Creators of ATLAS:Face (Personal Knowledge System) and Suntown (Moderated Daily Social Room).">
+    <meta property="og:image" content="assets/resistance-labs-logo-chroma.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Resistance Labs | Counter-Extractive Software">
+    <meta name="twitter:description" content="Building software that restores attention, deep thinking, and calm human connection.">
+    <meta name="twitter:image" content="assets/resistance-labs-logo-chroma.png">
+    <link rel="alternate" type="text/markdown" href="llms.txt" title="Resistance Labs AI Context">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --color-bg: #000000;
-            --color-bg-elevated: #0a0a0a;
-            --color-accent: #ff2a2a;
-            --color-accent-glow: rgba(255, 42, 42, 0.4);
-            --color-cyan: #00ffff;
-            --color-text: #f0f0f0;
-            --color-text-dim: #666666;
-            --font-mono: 'Space Mono', monospace;
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://resistancelabs.tech/#organization",
+          "name": "Resistance Labs",
+          "url": "https://resistancelabs.tech/",
+          "description": "Counter-extractive software engineered for human agency, cognitive wellness, and deliberate attention.",
+          "founder": {
+            "@type": "Organization",
+            "name": "Resistance Labs Tech"
+          },
+          "knowsAbout": ["Personal Knowledge Systems", "Spatial Information Architecture", "Local-First Software", "Cognitive Health"]
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://atlasface.resistancelabs.tech/#app",
+          "name": "ATLAS:Face",
+          "url": "https://atlasface.resistancelabs.tech/",
+          "applicationCategory": "ProductivityApplication",
+          "operatingSystem": "Windows, macOS, Linux",
+          "softwareVersion": "1.0.32",
+          "description": "A 3D spatial personal knowledge system with active recall and private semantic literature synthesis."
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://suntown.town/#app",
+          "name": "Suntown",
+          "url": "https://suntown.town/",
+          "applicationCategory": "SocialNetworkingApplication",
+          "operatingSystem": "Web",
+          "description": "A moderated daily social room operating on a 4-hour Golden Hour ritual with constitutional moderation."
         }
-
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: var(--font-mono);
-            background-color: var(--color-bg);
-            color: var(--color-text);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-            position: relative;
-        }
-
-        /* Subtle background glow */
-        body::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: radial-gradient(ellipse at center, rgba(255, 42, 42, 0.08) 0%, transparent 60%);
-        }
-
-        /* Scan lines overlay */
-        body::after {
-            content: '';
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: repeating-linear-gradient(0deg,
-                    transparent,
-                    transparent 2px,
-                    rgba(0, 0, 0, 0.1) 2px,
-                    rgba(0, 0, 0, 0.1) 4px);
-            pointer-events: none;
-            z-index: 100;
-        }
-
-        .container {
-            text-align: center;
-            z-index: 1;
-            padding: 2rem;
-        }
-
-        /* Main logo - Resistance Labs with aggressive glitch */
-        .logo {
-            font-size: clamp(1.5rem, 5vw, 3rem);
-            font-weight: 700;
-            letter-spacing: 0.2em;
-            text-transform: uppercase;
-            color: var(--color-text);
-            margin-bottom: 2rem;
-            position: relative;
-            display: inline-block;
-            animation: flicker 4s infinite;
-        }
-
-        /* Glitch layers */
-        .logo::before,
-        .logo::after {
-            content: 'RESISTANCE LABS';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: var(--color-bg);
-        }
-
-        .logo::before {
-            color: var(--color-accent);
-            animation: glitch-1 2.5s infinite steps(1);
-            clip-path: polygon(0 0, 100% 0, 100% 40%, 0 40%);
-        }
-
-        .logo::after {
-            color: var(--color-cyan);
-            animation: glitch-2 3s infinite steps(1);
-            clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
-        }
-
-        @keyframes glitch-1 {
-
-            0%,
-            100% {
-                transform: translateX(0);
-            }
-
-            5% {
-                transform: translateX(-10px) skewX(-5deg);
-            }
-
-            6% {
-                transform: translateX(8px) skewX(3deg);
-            }
-
-            7% {
-                transform: translateX(-5px);
-            }
-
-            8%,
-            40% {
-                transform: translateX(0);
-            }
-
-            41% {
-                transform: translateX(6px) skewX(-3deg);
-            }
-
-            42% {
-                transform: translateX(-12px) skewX(5deg);
-            }
-
-            43% {
-                transform: translateX(3px);
-            }
-
-            44%,
-            70% {
-                transform: translateX(0);
-            }
-
-            71% {
-                transform: translateX(-8px) skewX(2deg);
-            }
-
-            72% {
-                transform: translateX(10px) skewX(-4deg);
-            }
-
-            73% {
-                transform: translateX(-4px);
-            }
-
-            74% {
-                transform: translateX(0);
-            }
-        }
-
-        @keyframes glitch-2 {
-
-            0%,
-            100% {
-                transform: translateX(0);
-            }
-
-            10% {
-                transform: translateX(8px) skewX(4deg);
-            }
-
-            11% {
-                transform: translateX(-12px) skewX(-6deg);
-            }
-
-            12% {
-                transform: translateX(5px);
-            }
-
-            13%,
-            35% {
-                transform: translateX(0);
-            }
-
-            36% {
-                transform: translateX(-9px) skewX(3deg);
-            }
-
-            37% {
-                transform: translateX(11px) skewX(-5deg);
-            }
-
-            38% {
-                transform: translateX(-3px);
-            }
-
-            39%,
-            65% {
-                transform: translateX(0);
-            }
-
-            66% {
-                transform: translateX(7px) skewX(-2deg);
-            }
-
-            67% {
-                transform: translateX(-10px) skewX(4deg);
-            }
-
-            68% {
-                transform: translateX(4px);
-            }
-
-            69% {
-                transform: translateX(0);
-            }
-        }
-
-        @keyframes flicker {
-
-            0%,
-            100% {
-                opacity: 1;
-            }
-
-            90% {
-                opacity: 1;
-            }
-
-            91% {
-                opacity: 0.6;
-            }
-
-            92% {
-                opacity: 1;
-            }
-
-            93% {
-                opacity: 0.8;
-            }
-
-            94% {
-                opacity: 1;
-            }
-
-            95% {
-                opacity: 0.7;
-            }
-
-            96% {
-                opacity: 1;
-            }
-        }
-
-
-        .status {
-            font-size: 0.875rem;
-            letter-spacing: 0.3em;
-            text-transform: uppercase;
-            color: var(--color-text-dim);
-            margin-bottom: 3rem;
-        }
-
-        .status-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.75rem;
-            padding: 0.75rem 1.5rem;
-            border: 1px solid var(--color-accent);
-            background: transparent;
-        }
-
-        .status-dot {
-            width: 8px;
-            height: 8px;
-            background: var(--color-accent);
-            border-radius: 50%;
-            animation: blink 1.5s ease-in-out infinite;
-        }
-
-        @keyframes blink {
-
-            0%,
-            100% {
-                opacity: 1;
-            }
-
-            50% {
-                opacity: 0.3;
-            }
-        }
-
-        .status-text {
-            font-size: 0.75rem;
-            letter-spacing: 0.2em;
-            text-transform: uppercase;
-            color: var(--color-text);
-        }
-
-        .author {
-            position: fixed;
-            bottom: 2rem;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 0.75rem;
-            color: var(--color-text-dim);
-            letter-spacing: 0.1em;
-        }
-
-        /* Decorative corner accents */
-        .corner {
-            position: fixed;
-            width: 30px;
-            height: 30px;
-            border-color: var(--color-accent);
-            border-style: solid;
-            opacity: 0.3;
-        }
-
-        .corner-tl {
-            top: 20px;
-            left: 20px;
-            border-width: 2px 0 0 2px;
-        }
-
-        .corner-tr {
-            top: 20px;
-            right: 20px;
-            border-width: 2px 2px 0 0;
-        }
-
-        .corner-bl {
-            bottom: 20px;
-            left: 20px;
-            border-width: 0 0 2px 2px;
-        }
-
-        .corner-br {
-            bottom: 20px;
-            right: 20px;
-            border-width: 0 2px 2px 0;
-        }
-    </style>
+      ]
+    }
+    </script>
 </head>
 
 <body>
+    <!-- Top Global Header -->
+    <header class="site-header" id="site-header">
+        <div class="header-inner container">
+            <a href="#hero" class="brand-lockup" aria-label="Resistance Labs Home">
+                <span class="brand-symbol" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                        <line x1="10" y1="14" x2="14" y2="10" stroke="#d94e3e" stroke-width="2.5"></line>
+                    </svg>
+                </span>
+                <span class="brand-text">Resistance Labs</span>
+            </a>
 
-    <!-- Corner accents -->
-    <div class="corner corner-tl"></div>
-    <div class="corner corner-tr"></div>
-    <div class="corner corner-bl"></div>
-    <div class="corner corner-br"></div>
+            <nav class="site-nav" aria-label="Main Navigation">
+                <a href="#products">Products</a>
+                <a href="#thesis">Thesis</a>
+                <a href="#architecture">Architecture & AI</a>
+                <a href="#instruments">Instruments</a>
+                <a href="#company">Company</a>
+            </nav>
 
-    <!-- Main content -->
-    <div class="container">
-        <h1 class="logo">RESISTANCE LABS</h1>
-        <p class="status">Work in Progress</p>
-        <div class="status-badge">
-            <div class="status-dot"></div>
-            <span class="status-text">Building weapons...</span>
+            <div class="header-actions">
+                <a href="https://github.com/Resistance-Labs-Tech" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" title="GitHub Organization">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+                    </svg>
+                    <span>GitHub</span>
+                </a>
+                <a href="#products" class="btn btn-nav-primary">
+                    <span>View Products</span>
+                </a>
+            </div>
         </div>
-    </div>
+    </header>
 
-    <!-- Subtle author credit -->
-    <p class="author">— Samurai</p>
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        <span>HUMAN WELLNESS · COUNTER-EXTRACTIVE COMPUTING · LABS</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Software engineered for human agency, not algorithmic extraction.
+                    </h1>
+
+                    <p class="hero-subhead">
+                        Mainstream platforms optimize for time-on-device, outrage velocity, and compulsive dopamine loops. 
+                        Resistance Labs builds counter-mainstream applications designed to restore intellectual depth, 
+                        calm social connection, and data sovereignty.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#products" class="btn btn-primary">
+                            <span>Explore Active Products</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                        <a href="#thesis" class="btn btn-secondary">
+                            <span>Read The Thesis</span>
+                        </a>
+                    </div>
+
+                    <!-- Credibility Signals / Quick Stats -->
+                    <div class="credibility-strip">
+                        <div class="cred-item">
+                            <span class="cred-label">Desktop Ecosystem</span>
+                            <strong class="cred-value">ATLAS:Face v1.0.32</strong>
+                            <span class="cred-note">Windows · macOS · Linux</span>
+                        </div>
+                        <div class="cred-item">
+                            <span class="cred-label">Human-Scale Social</span>
+                            <strong class="cred-value">Suntown Protocol</strong>
+                            <span class="cred-note">4-Hour Daily Golden Hour</span>
+                        </div>
+                        <div class="cred-item">
+                            <span class="cred-label">Data Covenant</span>
+                            <strong class="cred-value">Zero Ad-Tech</strong>
+                            <span class="cred-note">Private & Local-First Intelligence</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-artifact" aria-hidden="true">
+                    <div class="emblem-card">
+                        <div class="emblem-header">
+                            <span class="mono-code">RL-SYS / CORE-SPEC</span>
+                            <span class="status-indicator live">ACTIVE SYSTEM</span>
+                        </div>
+                        <div class="emblem-visual">
+                            <img src="assets/resistance-labs-severed-loop-transparent.png" alt="Resistance Labs Severed Loop" class="emblem-img">
+                            <div class="emblem-glimmer"></div>
+                        </div>
+                        <div class="emblem-footer">
+                            <div class="spec-row">
+                                <span>THESIS</span>
+                                <strong>COUNTER-MAINSTREAM</strong>
+                            </div>
+                            <div class="spec-row">
+                                <span>STORAGE</span>
+                                <strong>LOCAL-FIRST / SOVEREIGN</strong>
+                            </div>
+                            <div class="spec-row">
+                                <span>INCENTIVE</span>
+                                <strong>HUMAN WELLNESS</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Thesis Section -->
+        <section id="thesis" class="section thesis-section">
+            <div class="container">
+                <div class="section-lead-block">
+                    <p class="section-kicker">01 / The Core Problem & Thesis</p>
+                    <h2 class="section-title">The attention crisis is an architectural failure, not personal weakness.</h2>
+                    <p class="section-intro">
+                        The consumer software industry underwent a catastrophic shift: platforms abandoned serving the user as customer, 
+                        turning the user's attention into the harvested product. Every infinite scroll, automated push alert, and outrage-amplifying 
+                        recommender system was deliberately engineered to induce trance states.
+                    </p>
+                </div>
+
+                <div class="thesis-matrix">
+                    <div class="matrix-card mainstream-card">
+                        <div class="matrix-header">
+                            <span class="matrix-tag tag-negative">Mainstream Extractive Paradigm</span>
+                            <h3>How mainstream apps trap attention</h3>
+                        </div>
+                        <ul class="matrix-list">
+                            <li>
+                                <strong>Infinite scroll & variable dopamine:</strong> Slot-machine feed mechanics prevent cognitive completion and degrade executive function.
+                            </li>
+                            <li>
+                                <strong>Surveillance monetization:</strong> Behavioral telemetry silently captures user interactions to maximize ad revenue and auction attention.
+                            </li>
+                            <li>
+                                <strong>Algorithmic outrage velocity:</strong> Recommenders boost divisive, high-arousal content over deliberate, reflective communication.
+                            </li>
+                            <li>
+                                <strong>Proprietary silos:</strong> Notes, conversations, and personal memories are locked behind walled gardens to force retention.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="matrix-card resistance-card">
+                        <div class="matrix-header">
+                            <span class="matrix-tag tag-positive">The Resistance Labs Standard</span>
+                            <h3>How we build for human wellness</h3>
+                        </div>
+                        <ul class="matrix-list">
+                            <li>
+                                <strong>Bounded sessions & finite rooms:</strong> Software that respects human boundaries. Applications designed to be closed so users can live offline.
+                            </li>
+                            <li>
+                                <strong>Zero ad-tech & local-first data:</strong> You are the customer, not the product. User data lives on your disk, in open standards (SQLite, Markdown).
+                            </li>
+                            <li>
+                                <strong>Synchronous human scale:</strong> Capped communities (e.g. 1,000 members) and intentional cadences that foster real relationships.
+                            </li>
+                            <li>
+                                <strong>Private intelligence assistance:</strong> Sovereign reasoning tools deployed strictly on the user's side to synthesize knowledge and maintain civil discourse.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Active Products Showcase -->
+        <section id="products" class="section products-section">
+            <div class="container">
+                <div class="section-lead-block">
+                    <p class="section-kicker">02 / Active Product Portfolio</p>
+                    <h2 class="section-title">Live applications built against the grain.</h2>
+                    <p class="section-intro">
+                        We do not build speculative whitepapers. Resistance Labs operates production software with active communities 
+                        and cross-platform desktop releases.
+                    </p>
+                </div>
+
+                <!-- Product 1: ATLAS:Face -->
+                <article id="atlasface" class="product-showcase">
+                    <div class="product-grid">
+                        <div class="product-info">
+                            <div class="product-meta">
+                                <span class="badge-product">FLAGSHIP DESKTOP SYSTEM</span>
+                                <span class="release-pill">v1.0.32 STABLE RELEASE</span>
+                            </div>
+                            <h3 class="product-title">ATLAS:Face</h3>
+                            <p class="product-tagline">Your Personal Knowledge System & Spatial Cognitive Workspace</p>
+                            
+                            <p class="product-description">
+                                Modern knowledge work is fractured across browser tabs, forgotten bookmarks, and fleeting bookmarks. 
+                                ATLAS:Face transforms books (EPUBs), research papers (PDFs), video notes, and thoughts into a permanent, 
+                                connected 3D spatial knowledge universe you genuinely own.
+                            </p>
+
+                            <div class="feature-bullets">
+                                <div class="feature-bullet">
+                                    <div class="feature-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <circle cx="18" cy="5" r="3"></circle>
+                                            <circle cx="6" cy="12" r="3"></circle>
+                                            <circle cx="18" cy="19" r="3"></circle>
+                                            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                                            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <strong>3D Spatial Knowledge Graph</strong>
+                                        <p>Visualize conceptual relationships, discover unexpected links between disciplines, and cluster insights spatially.</p>
+                                    </div>
+                                </div>
+
+                                <div class="feature-bullet">
+                                    <div class="feature-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                                            <polyline points="9 9 12 12 15 9"></polyline>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <strong>Integrated Active Recall & Spaced Loops</strong>
+                                        <p>Convert reading highlights directly into flashcards and spaced review sessions right inside the reader canvas.</p>
+                                    </div>
+                                </div>
+
+                                <div class="feature-bullet">
+                                    <div class="feature-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <strong>Local-First Sovereignty</strong>
+                                        <p>Full offline functionality. Built on transparent SQLite and Markdown files with zero vendor lock-in or telemetry.</p>
+                                    </div>
+                                </div>
+
+                                <div class="feature-bullet">
+                                    <div class="feature-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M12 2a10 10 0 1 0 10 10H12V2z"></path>
+                                            <path d="M12 12L2.5 7.5"></path>
+                                            <circle cx="12" cy="12" r="2"></circle>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <strong>Private Semantic Synthesis</strong>
+                                        <p>High-capacity contextual reasoning to synthesize dense research corpora across multiple documents without training on personal notes.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="platform-strip">
+                                <span class="platform-label">Supported Platforms:</span>
+                                <span class="platform-tag">Windows (.exe)</span>
+                                <span class="platform-tag">macOS (Apple Silicon & Intel)</span>
+                                <span class="platform-tag">Linux (AppImage & .deb)</span>
+                            </div>
+
+                            <div class="product-actions">
+                                <a href="https://atlasface.resistancelabs.tech/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                                    <span>Launch ATLAS:Face Site</span>
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                                <a href="https://github.com/Resistance-Labs-Tech/atlasface/releases" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                                    <span>Download Releases</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="product-visual">
+                            <div class="app-window-frame">
+                                <div class="window-titlebar">
+                                    <div class="window-dots">
+                                        <span></span><span></span><span></span>
+                                    </div>
+                                    <div class="window-title">atlasface.resistancelabs.tech — Spatial Knowledge Workspace</div>
+                                    <div class="window-status">v1.0.32</div>
+                                </div>
+                                <div class="window-content atlas-preview">
+                                    <div class="preview-sidebar">
+                                        <div class="preview-section-title">LIBRARY / SPATIAL</div>
+                                        <div class="preview-nav-item active">
+                                            <span class="preview-icon">✦</span> 3D Knowledge Universe
+                                        </div>
+                                        <div class="preview-nav-item">
+                                            <span class="preview-icon">■</span> Active Recall Deck (42)
+                                        </div>
+                                        <div class="preview-nav-item">
+                                            <span class="preview-icon">▲</span> Philosophy & Systems
+                                        </div>
+                                        <div class="preview-nav-item">
+                                            <span class="preview-icon">●</span> Cognitive Architecture
+                                        </div>
+                                    </div>
+                                    <div class="preview-main">
+                                        <div class="preview-canvas-header">
+                                            <div>
+                                                <span class="preview-tag">SPATIAL GRAPH</span>
+                                                <h4>Cognitive Wellness & Attention Architecture</h4>
+                                            </div>
+                                            <span class="preview-live-badge">Synthesis Engine: Ready</span>
+                                        </div>
+                                        <div class="preview-graph-canvas">
+                                            <div class="graph-node central">
+                                                <span>Deliberate Attention</span>
+                                            </div>
+                                            <div class="graph-node node-a">
+                                                <span>Sovereign Storage</span>
+                                            </div>
+                                            <div class="graph-node node-b">
+                                                <span>Semantic Graph</span>
+                                            </div>
+                                            <div class="graph-node node-c">
+                                                <span>Active Recall Loops</span>
+                                            </div>
+                                            <div class="graph-connection c1"></div>
+                                            <div class="graph-connection c2"></div>
+                                            <div class="graph-connection c3"></div>
+                                        </div>
+                                        <div class="preview-card-tray">
+                                            <div class="tray-card">
+                                                <span class="card-kicker">ACTIVE MEMORY NOTE</span>
+                                                <p>“Attention is the primary currency of cognitive sovereignty.”</p>
+                                            </div>
+                                            <div class="tray-card">
+                                                <span class="card-kicker">CROSS-REFERENCE</span>
+                                                <p>Linked to 14 papers across neuroscience and interface design.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 2: Suntown -->
+                <article id="suntown" class="product-showcase">
+                    <div class="product-grid">
+                        <div class="product-info">
+                            <div class="product-meta">
+                                <span class="badge-product badge-gold">HUMAN-SCALE SOCIAL ROOM</span>
+                                <span class="release-pill">LIVE IN PRODUCTION</span>
+                            </div>
+                            <h3 class="product-title">Suntown</h3>
+                            <p class="product-tagline">A Moderated Daily Social Room for Slower Public Conversation</p>
+                            
+                            <p class="product-description">
+                                An online gathering space engineered against 24/7 doomscrolling. Suntown operates on a strict daily ritual: 
+                                it opens for a 4-hour Golden Hour (14:00–18:00 UTC) and closes completely for the remaining twenty hours 
+                                to make room for offline life.
+                            </p>
+
+                            <div class="feature-bullets">
+                                <div class="feature-bullet">
+                                    <div class="feature-icon gold-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <polyline points="12 6 12 12 16 14"></polyline>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <strong>The Golden Hour Cadence</strong>
+                                        <p>Opens strictly from 14:00 to 18:00 UTC. When the town closes, the town sleeps. No midnight push notifications.</p>
+                                    </div>
+                                </div>
+
+                                <div class="feature-bullet">
+                                    <div class="feature-icon gold-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                            <circle cx="9" cy="7" r="4"></circle>
+                                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <strong>Capped 1,000-Seat Cohorts</strong>
+                                        <p>Early cohorts are capped at 1,000 people so names and conversations remain human-scale instead of anonymous mobs.</p>
+                                    </div>
+                                </div>
+
+                                <div class="feature-bullet">
+                                    <div class="feature-icon gold-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                                            <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <strong>Original Writing & Daily Themes</strong>
+                                        <p>Centered on deliberate, longer-form daily writing topics rather than reactive hot takes or meme recycling.</p>
+                                    </div>
+                                </div>
+
+                                <div class="feature-bullet">
+                                    <div class="feature-icon gold-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <strong>Humane, Nuanced Moderation</strong>
+                                        <p>Constructive civic moderation. AI assistance checks for conversational nuance and safety without automated censorship.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Live Suntown Golden Hour Widget -->
+                            <div class="suntown-live-widget" id="suntown-widget">
+                                <div class="widget-header">
+                                    <span class="widget-tag">REAL-TIME RITUAL TELEMETRY</span>
+                                    <span class="widget-status" id="gh-status-badge">CALCULATING...</span>
+                                </div>
+                                <div class="widget-body">
+                                    <div class="countdown-display" id="gh-countdown">--:--:--</div>
+                                    <p class="widget-desc" id="gh-status-text">
+                                        Suntown opens daily for Golden Hour from 14:00 to 18:00 UTC.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="product-actions">
+                                <a href="https://suntown.town/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-gold">
+                                    <span>Enter Suntown</span>
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                                <a href="https://suntown.town/about/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                                    <span>Read About Page</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="product-visual">
+                            <div class="app-window-frame frame-suntown">
+                                <div class="window-titlebar">
+                                    <div class="window-dots">
+                                        <span></span><span></span><span></span>
+                                    </div>
+                                    <div class="window-title">suntown.town — Daily Moderated Social Room</div>
+                                    <div class="window-status">14:00 - 18:00 UTC</div>
+                                </div>
+                                <div class="window-content suntown-preview">
+                                    <div class="town-banner">
+                                        <div class="town-seal">SUNTOWN</div>
+                                        <div class="town-motto">“Real people, original writing, slower public conversation.”</div>
+                                    </div>
+                                    <div class="town-theme-card">
+                                        <span class="theme-label">TODAY’S THEME</span>
+                                        <h4>On preserving intellectual focus in a fragmented century</h4>
+                                        <p class="theme-note">Writing room open to approved members · 48 essays posted today</p>
+                                    </div>
+                                    <div class="town-feed-mock">
+                                        <div class="mock-post">
+                                            <div class="post-author">
+                                                <div class="avatar-ph"></div>
+                                                <div>
+                                                    <strong>Elena Vance</strong>
+                                                    <span class="post-time">15:24 UTC</span>
+                                                </div>
+                                            </div>
+                                            <p>“When the app closes at 18:00, you feel relief. Conversation actually had a beginning and a natural finish.”</p>
+                                        </div>
+                                        <div class="mock-post">
+                                            <div class="post-author">
+                                                <div class="avatar-ph"></div>
+                                                <div>
+                                                    <strong>Marcus Chen</strong>
+                                                    <span class="post-time">16:02 UTC</span>
+                                                </div>
+                                            </div>
+                                            <p>“No infinite replies, no outrage quote-posting. Just deliberate essays read by people who took time to respond.”</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Architecture & Private Intelligence -->
+        <section id="architecture" class="section architecture-section">
+            <div class="container">
+                <div class="section-lead-block">
+                    <p class="section-kicker">03 / Applied AI & Engineering Architecture</p>
+                    <h2 class="section-title">Intelligence on the user’s side of the glass.</h2>
+                    <p class="section-intro">
+                        Artificial intelligence should not be an engine for micro-targeted advertising. 
+                        Resistance Labs deploys private intelligence and local-first models to put high-order 
+                        reasoning directly into the hands of individual humans.
+                    </p>
+                </div>
+
+                <div class="arch-grid">
+                    <div class="arch-card">
+                        <div class="arch-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                <polyline points="2 17 12 22 22 17"></polyline>
+                                <polyline points="2 12 12 17 22 12"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Deep Semantic Synthesis</h3>
+                        <p>
+                            ATLAS:Face leverages high-capacity contextual reasoning to parse entire books, 
+                            academic papers, and personal notes simultaneously. Instead of superficial keyword matching, 
+                            users get genuine conceptual cross-synthesis across years of personal research.
+                        </p>
+                        <div class="arch-spec">Capability: Multi-Document Knowledge Graphs</div>
+                    </div>
+
+                    <div class="arch-card">
+                        <div class="arch-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                        <h3>Nuanced Civic Moderation</h3>
+                        <p>
+                            In Suntown, maintaining a high-trust, human-scale forum requires moderation that understands 
+                            nuance, context, and tone. We leverage conversational reasoning principles to assist community 
+                            stewards in de-escalating conflicts without blunt automated censorship.
+                        </p>
+                        <div class="arch-spec">Capability: Context-Aware Civic Stewardship</div>
+                    </div>
+
+                    <div class="arch-card">
+                        <div class="arch-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                        </div>
+                        <h3>Client-Side Sovereignty</h3>
+                        <p>
+                            Our technical covenant: zero training on user notes, zero data brokering, zero profiling. 
+                            Model queries are processed on user demand via sovereign endpoints, with 
+                            zero retention on application servers and zero telemetry leakage.
+                        </p>
+                        <div class="arch-spec">Guarantee: Zero User Data Brokering</div>
+                    </div>
+                </div>
+
+                <!-- Architectural Covenant Card -->
+                <div class="startup-banner">
+                    <div class="startup-banner-content">
+                        <span class="startup-badge">ARCHITECTURAL COVENANT · PRIVATE INTELLIGENCE</span>
+                        <h3>Local-first execution. Zero user data harvesting.</h3>
+                        <p>
+                            Every intelligent feature across Resistance Labs operates on a strict user-side protocol: 
+                            your research notes, private thoughts, and reading patterns are never monetized, never 
+                            harvested for advertising profiles, and never used to train public models.
+                        </p>
+                    </div>
+                    <div class="startup-banner-cta">
+                        <a href="mailto:founders@resistancelabs.tech" class="btn btn-primary">
+                            <span>Engineering Inquiries</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lab Instruments & Community -->
+        <section id="instruments" class="section instruments-section">
+            <div class="container">
+                <div class="section-lead-block split">
+                    <div>
+                        <p class="section-kicker">04 / Lab Instruments & Community</p>
+                        <h2 class="section-title">Field experiments in attention defense.</h2>
+                    </div>
+                    <p class="section-intro">
+                        Alongside our primary applications, the lab develops focused utility tools and cultural marks 
+                        for individuals actively reclaiming their attention.
+                    </p>
+                </div>
+
+                <div class="instruments-grid">
+                    <div class="inst-card">
+                        <div class="inst-code">RL-01</div>
+                        <h3>Latch</h3>
+                        <p class="inst-desc">Commit to one desktop workspace. An Electron app and Chrome extension that detects involuntary tab-drifting and locks focus to chosen deep work.</p>
+                        <div class="inst-meta-row">
+                            <span class="inst-status">Desktop + Chrome</span>
+                            <a href="https://github.com/Resistance-Labs-Tech/latch" target="_blank" rel="noopener noreferrer" class="text-link">
+                                <span>GitHub Repo</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="inst-card">
+                        <div class="inst-code">RL-02</div>
+                        <h3>Reclaim</h3>
+                        <p class="inst-desc">Inhibitory focus training with brown-noise masking, OLED breath sync, and daily targets designed to rebuild sustained cognitive endurance.</p>
+                        <div class="inst-meta-row">
+                            <span class="inst-status">Attention PWA</span>
+                            <a href="https://github.com/Resistance-Labs-Tech/reclaim" target="_blank" rel="noopener noreferrer" class="text-link">
+                                <span>GitHub Repo</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="inst-card">
+                        <div class="inst-code">RL-03</div>
+                        <h3>Resistor Mark Generator</h3>
+                        <p class="inst-desc">A cryptographic mark for profile photos indicating refusal of mindless feed consumption. Break the loop in your public avatar.</p>
+                        <div class="inst-meta-row">
+                            <span class="inst-status">Field Mark</span>
+                            <a href="generator.html" class="text-link">
+                                <span>Open Generator</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14"></path>
+                                    <path d="M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Company & Contact Section -->
+        <section id="company" class="section company-section">
+            <div class="container narrow">
+                <div class="company-card">
+                    <div class="company-header">
+                        <p class="section-kicker">05 / Company & Governance</p>
+                        <h2>Building an enduring standard for humane technology.</h2>
+                        <p class="company-lead">
+                            Resistance Labs is an independent technology and research lab. We believe the next generation of great 
+                            software companies will not be built on user addiction, but on deep respect for human agency and wellness.
+                        </p>
+                    </div>
+
+                    <div class="company-details-grid">
+                        <div class="c-col">
+                            <h4>Institutional & Investor Inquiries</h4>
+                            <p>For research collaborations, institutional partnerships, or investor communications:</p>
+                            <a href="mailto:founders@resistancelabs.tech" class="contact-link">founders@resistancelabs.tech</a>
+                        </div>
+                        <div class="c-col">
+                            <h4>Engineering & Developer Access</h4>
+                            <p>Open-source repositories, API integrations, and developer contributions:</p>
+                            <a href="https://github.com/Resistance-Labs-Tech" target="_blank" rel="noopener noreferrer" class="contact-link">github.com/Resistance-Labs-Tech</a>
+                        </div>
+                        <div class="c-col">
+                            <h4>Community & Town Hall</h4>
+                            <p>Join fellow researchers, writers, and software builders inside the Resistance Labs Discord:</p>
+                            <a href="https://discord.com/invite/Y2RJkDJRW2" target="_blank" rel="noopener noreferrer" class="contact-link">discord.gg/Y2RJkDJRW2</a>
+                        </div>
+                        <div class="c-col">
+                            <h4>Legal & Ethical Covenant</h4>
+                            <p>We commit to zero behavioral ad tracking, local-first storage, and transparent user data ownership across every product.</p>
+                            <span class="c-badge">Constitutional AI Pledge</span>
+                        </div>
+                    </div>
+
+                    <div class="cta-center">
+                        <a href="mailto:founders@resistancelabs.tech" class="btn btn-primary">
+                            <span>Initiate Dialogue</span>
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Global Footer -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="brand-lockup">
+                    <span class="brand-symbol" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                            <line x1="10" y1="14" x2="14" y2="10" stroke="#d94e3e" stroke-width="2.5"></line>
+                        </svg>
+                    </span>
+                    <span class="brand-text">Resistance Labs</span>
+                </div>
+                <p class="footer-tagline">
+                    Counter-extractive software engineered for cognitive agency and human wellness.
+                </p>
+                <div class="footer-meta">
+                    <span>© 2026 Resistance Labs Tech. All rights reserved.</span>
+                    <span class="footer-dot">·</span>
+                    <span>Independent Product & Research Lab</span>
+                </div>
+            </div>
+
+            <div class="footer-nav-col">
+                <h5>Products</h5>
+                <a href="https://atlasface.resistancelabs.tech/" target="_blank" rel="noopener noreferrer">ATLAS:Face</a>
+                <a href="https://suntown.town/" target="_blank" rel="noopener noreferrer">Suntown</a>
+                <a href="generator.html">Resistor Mark Generator</a>
+                <a href="https://github.com/Resistance-Labs-Tech/atlasface/releases" target="_blank" rel="noopener noreferrer">Desktop Releases</a>
+            </div>
+
+            <div class="footer-nav-col">
+                <h5>Lab & Instruments</h5>
+                <a href="#thesis">Company Thesis</a>
+                <a href="https://github.com/Resistance-Labs-Tech/latch" target="_blank" rel="noopener noreferrer">RL-01 Latch (GitHub)</a>
+                <a href="https://github.com/Resistance-Labs-Tech/reclaim" target="_blank" rel="noopener noreferrer">RL-02 Reclaim (GitHub)</a>
+                <a href="llms.txt" target="_blank" rel="noopener noreferrer">llms.txt Context</a>
+            </div>
+
+            <div class="footer-nav-col">
+                <h5>Connect</h5>
+                <a href="https://github.com/Resistance-Labs-Tech" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://discord.com/invite/Y2RJkDJRW2" target="_blank" rel="noopener noreferrer">Discord</a>
+                <a href="mailto:founders@resistancelabs.tech">founders@resistancelabs.tech</a>
+                <a href="mailto:engineering@resistancelabs.tech">engineering@resistancelabs.tech</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
