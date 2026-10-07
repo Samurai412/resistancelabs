@@ -24,8 +24,8 @@ Resistance Labs deploys sovereign, user-directed intelligence across its product
    - **Privacy Covenant**: Zero training on user notes, local SQLite/Markdown persistence, and sovereign client-side API execution.
 
 2. **Suntown (Moderated Daily Social Room)**
-   - **Capability**: Nuanced, context-aware semantic evaluation and de-escalation.
-   - **Function**: Supports human community stewards with non-punitive conversational moderation during the 4-hour daily Golden Hour ritual (14:00–18:00 UTC), de-escalating hostility without blunt algorithmic censorship.
+   - **Capability**: Admissions verification and context-aware civic stewardship.
+   - **Function**: Uses Claude models to screen and evaluate prospective member application responses, verifying whether applicants meet community requirements and original writing commitments before admission. Supports community stewards with contextual assistance during the 4-hour daily Golden Hour ritual (14:00–18:00 UTC).
 
 ---
 
