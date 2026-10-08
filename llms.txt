@@ -25,7 +25,7 @@ Resistance Labs is an independent software studio building commercial tools for 
 - Status: Production Release v1.0.32
 - Platforms: Windows (.exe), macOS (.dmg), Linux (.AppImage, .deb)
 - Live Portal: https://atlasface.resistancelabs.tech/
-- Commercial Editions & Licensing:
+- Pricing & Editions:
   - Core Edition ($0 / forever): Complete offline desktop sovereignty, unlimited local SQLite/Markdown notes, 3D spatial knowledge graph, native PDF/EPUB reader.
   - ATLAS Pro ($12 / month): Access to AI Features powered by Claude models (turn YouTube videos into structured interactive lectures, generate flashcards from notes, interact and chat with each individual card, generate comprehensive exams, perform multi-document semantic literature synthesis, and encrypted cross-device cloud sync). Subscribed directly inside native desktop application.
 - Core Capabilities: 3D spatial knowledge graph, YouTube video-to-lecture synthesis, interactive card chat & exam generation, integrated active recall flashcards, and local SQLite/Markdown storage.
@@ -37,7 +37,7 @@ Resistance Labs is an independent software studio building commercial tools for 
 - Live Portal: https://suntown.town/
 - Public About Page: https://suntown.town/about/
 - Operating Cadence: 4-hour daily Golden Hour ritual (14:00–18:00 UTC), closing completely outside the window.
-- Commercial Sustainability & Revenue Model:
+- Membership Tiers:
   - Community Citizen ($0): Daily 4-hour Golden Hour room access via Claude admissions evaluation.
   - Sustaining Townsfolk ($8 / month): Verified member seal, priority admissions intake queue, full writing archive exports (Markdown/JSON), and retrospective reading digests.
   - Hosted Private Guild ($49 / month / room): Dedicated time-bounded rooms for remote engineering teams and research labs, configurable ritual hours, and Claude-assisted weekly discussion synthesis.
@@ -57,8 +57,8 @@ Resistance Labs is an independent software studio building commercial tools for 
 2. **Semantic Knowledge Synthesis & Recall Generation (Claude Models)**:
    In ATLAS:Face, high-capacity contextual reasoning parses full-length books (EPUBs) and academic papers (PDFs) to build conceptual connections across personal research and generate active recall study decks.
 
-3. **Unit Economics & High Gross Margins**:
-   Local-first client storage keeps baseline infrastructure costs near zero, giving ATLAS:Face 90%+ software margins. Cloud and token consumption scales directly with paid ATLAS Pro subscribers ($12/mo) using Claude for semantic synthesis and recall generation.
+3. **Infrastructure & Predictable Scaling**:
+   Local-first architecture keeps infrastructure overhead minimal by keeping primary storage on client devices. Cloud resources and model inference scale predictably with active Pro subscriptions.
 
-4. **Local-First & Data Privacy**:
-   No third-party ad networks, no telemetry auctions, and no training on user personal notes. User data lives on local disk in standard SQLite and Markdown formats.
+4. **Data Privacy & Ownership**:
+   No third-party ad networks, no telemetry auctions, and no training on user notes. User files reside on local disk in standard SQLite and Markdown formats.
