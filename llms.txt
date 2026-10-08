@@ -46,7 +46,6 @@ Resistance Labs is an independent software studio building commercial tools for 
 ### 3. Developer & Focus Utilities
 - RL-01 Latch: Desktop workspace commitment tool for uninterrupted deep work.
 - RL-02 Reclaim: PWA inhibitory focus training with calibrated brown-noise acoustic masking.
-- RL-03 Resistor Mark: Avatar generator for intentional digital focus (https://resistancelabs.tech/generator.html).
 
 ---
 
