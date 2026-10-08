@@ -24,8 +24,11 @@ Resistance Labs is an independent software studio building commercial tools for 
 - Status: Production Release v1.0.32
 - Platforms: Windows (.exe), macOS (.dmg), Linux (.AppImage, .deb)
 - Live Portal: https://atlasface.resistancelabs.tech/
-- Commercial Model: Free local-first desktop core; optional Pro cloud synchronization and team workspaces ($12/month).
-- Core Capabilities: 3D spatial knowledge graph, integrated active recall cards, local SQLite/Markdown storage, and multi-document semantic literature synthesis.
+- Commercial Editions & Licensing:
+  - Core Edition ($0 / forever): Complete offline desktop sovereignty, unlimited local SQLite/Markdown notes, 3D spatial knowledge graph, native PDF/EPUB reader.
+  - ATLAS Pro ($12 / month): Access to AI Features powered by Claude (multi-document semantic literature synthesis, automated active recall deck generation from reading highlights, contextual margin Q&A across local libraries, and encrypted cross-device cloud sync).
+  - Lab & Team ($24 / user / month): Shared research graphs, team synthesis workspaces, custom Claude API routing, and administrative management.
+- Core Capabilities: 3D spatial knowledge graph, integrated active recall cards, local SQLite/Markdown storage, and Claude-powered literature synthesis.
 
 ### 2. Suntown
 - Category: Moderated Daily Social Room & Community Network
@@ -34,7 +37,10 @@ Resistance Labs is an independent software studio building commercial tools for 
 - Live Portal: https://suntown.town/
 - Public About Page: https://suntown.town/about/
 - Operating Cadence: 4-hour daily Golden Hour ritual (14:00–18:00 UTC), closing completely outside the window.
-- Commercial Model: Free community cohorts by application; sustaining memberships ($8/month) for custom town instances and community support.
+- Commercial Sustainability & Revenue Model:
+  - Community Citizen ($0): Daily 4-hour Golden Hour room access via Claude admissions evaluation.
+  - Sustaining Townsfolk ($8 / month): Verified member seal, priority admissions intake queue, full writing archive exports (Markdown/JSON), and retrospective reading digests.
+  - Hosted Private Guild ($49 / month / room): Dedicated time-bounded rooms for remote engineering teams and research labs, configurable ritual hours, and Claude-assisted weekly discussion synthesis.
 - AI Integration: Uses Claude models to evaluate prospective member application responses against community standards and writing commitments prior to admission.
 
 ### 3. Developer & Focus Utilities
@@ -49,8 +55,11 @@ Resistance Labs is an independent software studio building commercial tools for 
 1. **Member Admissions Screening (Claude Models)**:
    In Suntown, prospective members submit written responses that are evaluated using Claude models to determine whether applicants understand community customs and meet the requirements to participate in the town.
 
-2. **Semantic Knowledge Synthesis**:
-   In ATLAS:Face, high-capacity contextual reasoning parses full-length books (EPUBs) and academic papers (PDFs) to build conceptual connections across personal research.
+2. **Semantic Knowledge Synthesis & Recall Generation (Claude Models)**:
+   In ATLAS:Face, high-capacity contextual reasoning parses full-length books (EPUBs) and academic papers (PDFs) to build conceptual connections across personal research and generate active recall study decks.
 
-3. **Local-First & Data Privacy**:
+3. **Unit Economics & High Gross Margins**:
+   Local-first client storage keeps baseline infrastructure costs near zero, giving ATLAS:Face 90%+ software margins. Cloud and token consumption scales directly with paid ATLAS Pro subscribers ($12/mo) using Claude for semantic synthesis and recall generation.
+
+4. **Local-First & Data Privacy**:
    No third-party ad networks, no telemetry auctions, and no training on user personal notes. User data lives on local disk in standard SQLite and Markdown formats.
