@@ -985,8 +985,23 @@ button {
     text-align: center;
 }
 
+.tiers-grid-2col {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.tier-footnote {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    text-align: center;
+    margin-top: 0.65rem;
+}
+
 @media (max-width: 960px) {
-    .tiers-grid {
+    .tiers-grid,
+    .tiers-grid-2col {
         grid-template-columns: 1fr;
     }
     .tier-subtext {

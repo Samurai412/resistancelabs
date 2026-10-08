@@ -26,8 +26,7 @@ Resistance Labs is an independent software studio building commercial tools for 
 - Live Portal: https://atlasface.resistancelabs.tech/
 - Commercial Editions & Licensing:
   - Core Edition ($0 / forever): Complete offline desktop sovereignty, unlimited local SQLite/Markdown notes, 3D spatial knowledge graph, native PDF/EPUB reader.
-  - ATLAS Pro ($12 / month): Access to AI Features powered by Claude (multi-document semantic literature synthesis, automated active recall deck generation from reading highlights, contextual margin Q&A across local libraries, and encrypted cross-device cloud sync).
-  - Lab & Team ($24 / user / month): Shared research graphs, team synthesis workspaces, custom Claude API routing, and administrative management.
+  - ATLAS Pro ($12 / month): Access to AI Features powered by Claude (multi-document semantic literature synthesis, automated active recall deck generation from reading highlights, contextual margin Q&A across local libraries, and encrypted cross-device cloud sync). Subscribed directly inside native desktop application.
 - Core Capabilities: 3D spatial knowledge graph, integrated active recall cards, local SQLite/Markdown storage, and Claude-powered literature synthesis.
 
 ### 2. Suntown
