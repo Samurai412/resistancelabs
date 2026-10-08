@@ -7,7 +7,6 @@
 - Headquarters: Amman, Jordan
 - Structure: Bootstrapped Software Studio
 - Founder & Lead Engineer: Abdallah Arabi (abdallah@resistancelabs.tech)
-- Primary GitHub: https://github.com/Resistance-Labs-Tech
 - Contact: founders@resistancelabs.tech
 
 ---
@@ -25,7 +24,6 @@ Resistance Labs is an independent software studio building commercial tools for 
 - Status: Production Release v1.0.32
 - Platforms: Windows (.exe), macOS (.dmg), Linux (.AppImage, .deb)
 - Live Portal: https://atlasface.resistancelabs.tech/
-- Repository: https://github.com/Resistance-Labs-Tech/atlasface
 - Commercial Model: Free local-first desktop core; optional Pro cloud synchronization and team workspaces ($12/month).
 - Core Capabilities: 3D spatial knowledge graph, integrated active recall cards, local SQLite/Markdown storage, and multi-document semantic literature synthesis.
 
@@ -40,8 +38,8 @@ Resistance Labs is an independent software studio building commercial tools for 
 - AI Integration: Uses Claude models to evaluate prospective member application responses against community standards and writing commitments prior to admission.
 
 ### 3. Developer & Focus Utilities
-- RL-01 Latch: Desktop workspace defender for deep work commitment (https://github.com/Resistance-Labs-Tech/latch).
-- RL-02 Reclaim: PWA inhibitory focus training with brown-noise masking (https://github.com/Resistance-Labs-Tech/reclaim).
+- RL-01 Latch: Desktop workspace commitment tool for uninterrupted deep work.
+- RL-02 Reclaim: PWA inhibitory focus training with calibrated brown-noise acoustic masking.
 - RL-03 Resistor Mark: Avatar generator for intentional digital focus (https://resistancelabs.tech/generator.html).
 
 ---
