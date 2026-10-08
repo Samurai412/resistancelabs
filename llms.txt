@@ -1,61 +1,58 @@
 # Resistance Labs
 
-> Counter-extractive software engineered for human agency, cognitive wellness, and deliberate attention.
+> Independent software studio building local-first knowledge systems and calm social platforms.
 
-Canonical URL: https://resistancelabs.tech/
-Organization: Resistance Labs Tech
-Primary GitHub: https://github.com/Resistance-Labs-Tech
-Contact: founders@resistancelabs.tech
+- Canonical URL: https://resistancelabs.tech/
+- Founded: January 2026
+- Headquarters: Amman, Jordan
+- Structure: Bootstrapped Software Studio
+- Founder & Lead Engineer: Abdallah Arabi (abdallah@resistancelabs.tech)
+- Primary GitHub: https://github.com/Resistance-Labs-Tech
+- Contact: founders@resistancelabs.tech
 
 ---
 
 ## Executive Summary
-Resistance Labs is an applied software and research laboratory building counter-mainstream applications designed to reverse the harms of extractive attention economics. Rather than optimizing for engagement velocity or advertising telemetry, Resistance Labs builds software with bounded operating windows, local-first data ownership, and private AI reasoning.
 
----
-
-## Technical Architecture & Private Intelligence
-
-Resistance Labs deploys sovereign, user-directed intelligence across its product ecosystem:
-
-1. **ATLAS:Face (Personal Knowledge System)**
-   - **Capability**: High-capacity contextual reasoning and multi-document literature synthesis.
-   - **Function**: Ingests full-length books (EPUBs), academic research papers (PDFs), and cross-disciplinary user notes to dynamically construct 3D spatial knowledge graphs, bidirectional semantic links, and active recall decks.
-   - **Privacy Covenant**: Zero training on user notes, local SQLite/Markdown persistence, and sovereign client-side API execution.
-
-2. **Suntown (Moderated Daily Social Room)**
-   - **Capability**: Admissions verification and context-aware civic stewardship.
-   - **Function**: Uses Claude models to screen and evaluate prospective member application responses, verifying whether applicants meet community requirements and original writing commitments before admission. Supports community stewards with contextual assistance during the 4-hour daily Golden Hour ritual (14:00–18:00 UTC).
+Resistance Labs is an independent software studio building commercial tools for knowledge workers, researchers, and intentional communities. We design applications centered on local-first data ownership, bounded operating sessions, and private intelligence.
 
 ---
 
 ## Active Product Portfolio
 
 ### 1. ATLAS:Face
-- **Category**: Personal Knowledge System & Spatial Cognitive Workspace
-- **Status**: Stable Release v1.0.32 in Production
-- **Platforms**: Windows (.exe installer), macOS (Apple Silicon + Intel DMG), Linux (AppImage + .deb)
-- **Live URL**: https://atlasface.resistancelabs.tech/
-- **Repository**: https://github.com/Resistance-Labs-Tech/atlasface
-- **Core Features**: 3D spatial knowledge graph, integrated active recall loops, local-first Markdown/SQLite storage, private semantic synthesis.
+- Category: Personal Knowledge System (PKS) & Spatial Reader
+- Status: Production Release v1.0.32
+- Platforms: Windows (.exe), macOS (.dmg), Linux (.AppImage, .deb)
+- Live Portal: https://atlasface.resistancelabs.tech/
+- Repository: https://github.com/Resistance-Labs-Tech/atlasface
+- Commercial Model: Free local-first desktop core; optional Pro cloud synchronization and team workspaces ($12/month).
+- Core Capabilities: 3D spatial knowledge graph, integrated active recall cards, local SQLite/Markdown storage, and multi-document semantic literature synthesis.
 
 ### 2. Suntown
-- **Category**: Moderated Daily Social Room & Human-Scale Community
-- **Status**: Live in Production
-- **Platform**: Progressive Web Application
-- **Live URL**: https://suntown.town/
-- **About & Charter**: https://suntown.town/about/
-- **Ritual**: Opens daily for a 4-hour Golden Hour from 14:00 to 18:00 UTC, then closes completely to make room for offline life.
-- **Scale**: Capped at 1,000 seats per cohort to preserve genuine human relationships.
+- Category: Moderated Daily Social Room & Community Network
+- Status: Live in Production
+- Platform: Progressive Web Application (PWA)
+- Live Portal: https://suntown.town/
+- Public About Page: https://suntown.town/about/
+- Operating Cadence: 4-hour daily Golden Hour ritual (14:00–18:00 UTC), closing completely outside the window.
+- Commercial Model: Free community cohorts by application; sustaining memberships ($8/month) for custom town instances and community support.
+- AI Integration: Uses Claude models to evaluate prospective member application responses against community standards and writing commitments prior to admission.
 
-### 3. Lab Utilities & Field Instruments
-- **RL-01 Latch**: Desktop workspace defender redirecting attention during involuntary context switches (https://github.com/Resistance-Labs-Tech/latch).
-- **RL-02 Reclaim**: Inhibitory focus training with brown-noise masking and gated focus intervals (https://github.com/Resistance-Labs-Tech/reclaim).
-- **RL-03 Resistor Mark Generator**: Profile image generator symbolizing refusal of compulsive feed mechanics (https://resistancelabs.tech/generator.html).
+### 3. Developer & Focus Utilities
+- RL-01 Latch: Desktop workspace defender for deep work commitment (https://github.com/Resistance-Labs-Tech/latch).
+- RL-02 Reclaim: PWA inhibitory focus training with brown-noise masking (https://github.com/Resistance-Labs-Tech/reclaim).
+- RL-03 Resistor Mark: Avatar generator for intentional digital focus (https://resistancelabs.tech/generator.html).
 
 ---
 
-## Data Privacy & Ethical Governance
-- **Zero Behavioral Advertising**: No third-party ad networks or data brokering.
-- **Local-First Architecture**: User files remain on local disk under user ownership.
-- **Constitutional AI Commitment**: AI models are deployed strictly to amplify human reflection and agency, never to induce compulsive engagement.
+## Technical & AI Architecture
+
+1. **Member Admissions Screening (Claude Models)**:
+   In Suntown, prospective members submit written responses that are evaluated using Claude models to determine whether applicants understand community customs and meet the requirements to participate in the town.
+
+2. **Semantic Knowledge Synthesis**:
+   In ATLAS:Face, high-capacity contextual reasoning parses full-length books (EPUBs) and academic papers (PDFs) to build conceptual connections across personal research.
+
+3. **Local-First & Data Privacy**:
+   No third-party ad networks, no telemetry auctions, and no training on user personal notes. User data lives on local disk in standard SQLite and Markdown formats.

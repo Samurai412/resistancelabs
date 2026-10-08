@@ -682,7 +682,28 @@ button, input {
     font-size: 1.1rem;
     font-weight: 500;
     color: var(--text);
+    margin-bottom: 0.75rem;
+}
+
+.commercial-model-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.76rem;
+    font-weight: 600;
+    color: var(--cyan);
+    background: var(--cyan-soft);
+    border: 1px solid rgba(86, 182, 194, 0.28);
+    padding: 0.35rem 0.75rem;
+    border-radius: 3px;
     margin-bottom: 1.25rem;
+}
+
+.commercial-model-badge.badge-gold-model {
+    color: var(--gold);
+    background: var(--gold-soft);
+    border-color: rgba(217, 155, 67, 0.28);
 }
 
 .product-description {
