@@ -8,6 +8,7 @@
 - Structure: Bootstrapped Software Studio
 - Founder & Lead Engineer: Abdallah Arabi (abdallah@resistancelabs.tech)
 - Contact: founders@resistancelabs.tech
+- LinkedIn: https://www.linkedin.com/company/resistancelabs
 
 ---
 
