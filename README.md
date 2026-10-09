@@ -6,7 +6,7 @@ Counter-extractive software designed to restore human cognitive sovereignty, att
 
 ## Products & Instruments
 
-- **ATLAS:Face**: Local-first personal knowledge system with 3D spatial vector graph, EPUB/PDF reader, and Claude AI synthesis. [atlasface.resistancelabs.tech](https://atlasface.resistancelabs.tech/)
+- **ATLAS Workspace**: Local-first personal knowledge system with 3D spatial vector graph, EPUB/PDF reader, and Claude AI synthesis. [resistancelabs.tech/#atlas](https://resistancelabs.tech/#atlas)
 - **Suntown**: Moderated daily social room operating on a single 4-hour Golden Hour (14:00–18:00 UTC) with Claude admissions screening. [suntown.town](https://suntown.town/)
 - **RL-01 Latch**: Commitment timer and distraction blocker for desktop & browser.
 - **RL-02 Reclaim**: Inhibitory focus trainer using synthetic brown-noise acoustic masking.

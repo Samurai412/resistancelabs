@@ -20,11 +20,11 @@ Resistance Labs is an independent software studio building commercial tools for 
 
 ## Active Product Portfolio
 
-### 1. ATLAS:Face
+### 1. ATLAS Workspace
 - Category: Personal Knowledge System (PKS) & Spatial Reader
 - Status: Production Release v1.0.32
 - Platforms: Windows (.exe), macOS (.dmg), Linux (.AppImage, .deb)
-- Live Portal: https://atlasface.resistancelabs.tech/
+- Live Portal: https://resistancelabs.tech/#atlas
 - Pricing & Editions:
   - Core Edition ($0 / forever): Complete offline desktop sovereignty, unlimited local SQLite/Markdown notes, 3D spatial knowledge graph, native PDF/EPUB reader.
   - ATLAS Pro ($12 / month): Access to AI Features powered by Claude models (turn YouTube videos into structured interactive lectures, generate flashcards from notes, interact and chat with each individual card, generate comprehensive exams, perform multi-document semantic literature synthesis, and encrypted cross-device cloud sync). Subscribed directly inside native desktop application.
@@ -55,7 +55,7 @@ Resistance Labs is an independent software studio building commercial tools for 
    In Suntown, prospective members submit written responses that are evaluated using Claude models to determine whether applicants understand community customs and meet the requirements to participate in the town.
 
 2. **Semantic Knowledge Synthesis & Recall Generation (Claude Models)**:
-   In ATLAS:Face, high-capacity contextual reasoning parses full-length books (EPUBs) and academic papers (PDFs) to build conceptual connections across personal research and generate active recall study decks.
+   In ATLAS Workspace, high-capacity contextual reasoning parses full-length books (EPUBs) and academic papers (PDFs) to build conceptual connections across personal research and generate active recall study decks.
 
 3. **Infrastructure & Predictable Scaling**:
    Local-first architecture keeps infrastructure overhead minimal by keeping primary storage on client devices. Cloud resources and model inference scale predictably with active Pro subscriptions.
