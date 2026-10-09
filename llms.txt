@@ -28,7 +28,7 @@ Resistance Labs is an independent software studio building commercial tools for 
 - Community Marketplace: https://resistancelabs.tech/marketplace.html
 
 ### Pricing & Monetization Model
-- **Core Edition ($0 / forever)**: Complete offline desktop sovereignty, unlimited local SQLite/Markdown notes, 3D spatial knowledge graph, native PDF/EPUB reader, freehand visual canvas, and Spaced Repetition (SRS) flashcard engine.
+- **Core Edition ($0 / Included)**: Complete offline desktop sovereignty, unlimited local SQLite/Markdown notes, 3D spatial knowledge graph, native PDF/EPUB reader, freehand visual canvas, and Spaced Repetition (SRS) flashcard engine.
 - **ATLAS Pro ($12 / month)**: Production AI features powered by Claude models (multi-document semantic synthesis across dense literature corpuses, interactive video lectures and real-time comprehension quizzes from YouTube transcripts, automated active-recall flashcard authoring from reading highlights, interactive Socratic card chat and practice exam generation, and encrypted end-to-end cloud sync).
 
 ---

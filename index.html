@@ -233,6 +233,298 @@
         color: #fff;
         text-decoration: underline;
       }
+
+      /* Mobile Navigation Toggle & Drawer */
+      .mobile-menu-toggle {
+        display: none;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        color: #fff;
+        border-radius: 8px;
+        width: 42px;
+        height: 42px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        padding: 0;
+        transition: all 0.2s ease;
+      }
+      .mobile-menu-toggle:hover {
+        background: rgba(255, 255, 255, 0.1);
+        border-color: rgba(255, 255, 255, 0.25);
+      }
+      .mobile-nav-drawer {
+        display: none;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(8, 9, 12, 0.96);
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+        padding: 1.5rem 1.25rem 2.5rem;
+        z-index: 999;
+        overflow-y: auto;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      .mobile-nav-drawer.open {
+        display: block;
+        animation: mobileNavFade 0.2s ease-out;
+      }
+      @keyframes mobileNavFade {
+        from { opacity: 0; transform: translateY(-8px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .mobile-nav-links {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        max-width: 440px;
+        margin: 0 auto;
+      }
+      .mobile-nav-link {
+        font-family: 'Sora', sans-serif;
+        font-size: 1.05rem;
+        font-weight: 500;
+        color: #d1d6e8;
+        text-decoration: none;
+        padding: 0.85rem 1rem;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        gap: 0.85rem;
+        transition: all 0.15s ease;
+        background: rgba(255, 255, 255, 0.02);
+        border: 1px solid rgba(255, 255, 255, 0.04);
+      }
+      .mobile-nav-link svg {
+        color: #38bdf8;
+        flex-shrink: 0;
+      }
+      .mobile-nav-link:hover, .mobile-nav-link:active {
+        color: #fff;
+        background: rgba(255, 255, 255, 0.08);
+        border-color: rgba(255, 255, 255, 0.15);
+      }
+      .mobile-nav-btn {
+        margin-top: 1rem;
+        width: 100%;
+        justify-content: center;
+        padding: 1rem 1.25rem;
+        font-size: 1rem;
+        font-weight: 700;
+      }
+
+      /* Phone Viewport Optimizations */
+      @media (max-width: 640px) {
+        html, body {
+          overflow-x: hidden;
+          max-width: 100vw;
+        }
+        .navbar .btn-nav {
+          display: none;
+        }
+        .mobile-menu-toggle {
+          display: inline-flex;
+        }
+        .nav-container {
+          padding: 0 1rem;
+          height: 60px;
+        }
+        .hero-section {
+          padding: 4.5rem 1rem 2.5rem;
+        }
+        .hero-title {
+          font-size: clamp(1.85rem, 7.5vw, 2.45rem);
+          line-height: 1.2;
+          margin-bottom: 1rem;
+          letter-spacing: -0.02em;
+        }
+        .hero-title br {
+          display: none;
+        }
+        .hero-subtitle {
+          font-size: 0.95rem;
+          line-height: 1.6;
+          margin-bottom: 1.75rem;
+          padding: 0 0.25rem;
+        }
+        .hero-actions {
+          flex-direction: column;
+          width: 100%;
+          gap: 0.75rem;
+        }
+        .btn-hero {
+          width: 100%;
+          justify-content: center;
+          padding: 0.95rem 1.25rem;
+          min-height: 50px;
+          font-size: 0.95rem;
+        }
+        .download-dropdown-wrapper {
+          width: 100%;
+        }
+        .dropdown-menu {
+          position: static;
+          width: 100%;
+          margin-top: 0.5rem;
+          box-shadow: none;
+          border: 1px solid rgba(255, 255, 255, 0.12);
+        }
+        .hero-mockup-wrapper {
+          margin-top: 2rem;
+        }
+        .window-header {
+          padding: 0.5rem 0.75rem;
+        }
+        .window-title {
+          font-size: 0.72rem;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        
+        /* Studio Section & Native Swiping Tab Bar */
+        .studio-section {
+          padding: 3.5rem 0;
+        }
+        .studio-tabs-nav {
+          display: flex;
+          flex-wrap: nowrap;
+          overflow-x: auto;
+          -webkit-overflow-scrolling: touch;
+          scrollbar-width: none;
+          padding: 0.35rem 1rem;
+          margin: 0 -1rem 1.75rem;
+          gap: 0.5rem;
+          justify-content: flex-start;
+        }
+        .studio-tabs-nav::-webkit-scrollbar {
+          display: none;
+        }
+        .studio-tab {
+          flex-shrink: 0;
+          white-space: nowrap;
+          padding: 0.6rem 1rem;
+          font-size: 0.85rem;
+          min-height: 44px;
+        }
+        .panel-layout {
+          grid-template-columns: 1fr;
+          gap: 1.5rem;
+        }
+        .panel-info h3 {
+          font-size: 1.3rem;
+        }
+        .panel-info p {
+          font-size: 0.92rem;
+          line-height: 1.6;
+        }
+        .panel-bullets li {
+          font-size: 0.88rem;
+        }
+
+        /* Capabilities Grid on Phone */
+        .capabilities-section {
+          padding: 3.5rem 0;
+        }
+        .capabilities-grid {
+          grid-template-columns: 1fr;
+          gap: 1rem;
+          margin-top: 2rem;
+        }
+        .capability-card {
+          padding: 1.35rem 1.25rem;
+        }
+
+        /* Pricing Grid on Phone */
+        .pricing-section {
+          padding: 3.5rem 0;
+        }
+        .pricing-grid {
+          grid-template-columns: 1fr;
+          gap: 1.5rem;
+          margin-top: 2rem;
+          padding: 0;
+        }
+        .pricing-card {
+          padding: 1.75rem 1.25rem;
+        }
+        .pricing-price {
+          font-size: 2.35rem;
+        }
+
+        /* Community Section on Phone */
+        .community-cta-section {
+          padding: 3rem 0;
+        }
+        .community-card {
+          padding: 2rem 1.25rem;
+        }
+        .community-card-actions {
+          flex-direction: column;
+          width: 100%;
+          gap: 0.75rem;
+        }
+        .community-card-actions a {
+          width: 100%;
+          justify-content: center;
+          min-height: 48px;
+        }
+
+        /* Downloads Section on Phone */
+        .download-section {
+          padding: 3.5rem 0;
+        }
+        .download-grid {
+          grid-template-columns: 1fr;
+          gap: 0.75rem;
+          margin-top: 2rem;
+        }
+        .download-card {
+          padding: 1.15rem 1.1rem;
+          min-height: 72px;
+        }
+
+        /* Footer on Phone */
+        .footer {
+          padding: 2.5rem 0 3.5rem;
+        }
+        .footer-container {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 2rem;
+        }
+        .footer-brand {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0.5rem;
+        }
+        .footer-copy {
+          margin-left: 0;
+          margin-top: 0.25rem;
+        }
+        .footer-links {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 0.85rem 1.5rem;
+          width: 100%;
+        }
+        .footer-links a {
+          padding: 0.35rem 0;
+          font-size: 0.95rem;
+        }
+      }
+
+      @media (max-width: 380px) {
+        .hero-title {
+          font-size: 1.7rem;
+        }
+        .footer-links {
+          grid-template-columns: 1fr;
+        }
+      }
     </style>
   </head>
   <body>
@@ -269,8 +561,53 @@
             Download
           </a>
         </div>
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg class="icon-hamburger" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          <svg class="icon-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none;"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
       </div>
     </nav>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-hidden="true">
+      <div class="mobile-nav-links">
+        <a href="#features" class="mobile-nav-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+          <span>Features</span>
+        </a>
+        <a href="#capabilities" class="mobile-nav-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <span>Capabilities</span>
+        </a>
+        <a href="#pricing" class="mobile-nav-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+          <span>Pricing &amp; Pro Tier</span>
+        </a>
+        <a href="marketplace.html" class="mobile-nav-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-7z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+          <span>Community Marketplace</span>
+        </a>
+        <a href="docs.html" class="mobile-nav-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+          <span>Documentation</span>
+        </a>
+        <a href="privacy.html" class="mobile-nav-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          <span>Privacy Policy</span>
+        </a>
+        <a href="terms.html" class="mobile-nav-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></line><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+          <span>Terms of Service</span>
+        </a>
+        <a href="https://discord.com/invite/Y2RJkDJRW2" target="_blank" rel="noopener" class="mobile-nav-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.32 4.37A19.8 19.8 0 0 0 15.36 2.8a13.8 13.8 0 0 0-.64 1.33 18.27 18.27 0 0 0-5.44 0 13.8 13.8 0 0 0-.64-1.33 19.8 19.8 0 0 0-4.96 1.57C.54 9.09-.32 13.7.1 18.25a19.9 19.9 0 0 0 6.08 3.05 14.7 14.7 0 0 0 1.3-2.1 12.9 12.9 0 0 1-2.05-.98c.17-.12.34-.25.5-.38a14.1 14.1 0 0 0 12.14 0c.16.13.33.26.5.38-.65.38-1.33.71-2.05.98.37.73.8 1.43 1.3 2.1a19.9 19.9 0 0 0 6.08-3.05c.5-5.27-.85-9.84-3.58-13.88ZM8.03 15.46c-1.18 0-2.16-1.1-2.16-2.44 0-1.35.96-2.45 2.16-2.45 1.2 0 2.18 1.11 2.16 2.45 0 1.35-.96 2.44-2.16 2.44Zm7.94 0c-1.18 0-2.16-1.1-2.16-2.44 0-1.35.96-2.45 2.16-2.45 1.2 0 2.18 1.11 2.16 2.45 0 1.35-.96 2.44-2.16 2.44Z"/></svg>
+          <span>Discord Community</span>
+        </a>
+        <a href="#download" class="btn-primary mobile-nav-btn">
+          <span>Download Desktop App</span>
+        </a>
+      </div>
+    </div>
 
     <main id="main-content">
       <!-- Hero Section -->
@@ -596,16 +933,16 @@
       <section class="pricing-section" id="pricing">
         <div class="section-container text-center">
           <h2 class="section-title">Transparent, Sovereign Licensing</h2>
-          <p class="section-subtitle">Use the complete offline desktop core for free forever, or upgrade to Pro for deep Claude AI document reasoning.</p>
+          <p class="section-subtitle">Get started with Core Desktop for offline local study, or subscribe to Pro for deep Claude AI document reasoning and synthesis.</p>
 
           <div class="pricing-grid">
-            <!-- Core Free Tier -->
+            <!-- Core Desktop Tier -->
             <div class="pricing-card">
               <div>
                 <div class="pricing-tier-name">CORE EDITION</div>
                 <div class="pricing-price">
                   <span>$0</span>
-                  <span class="pricing-cadence">/ forever</span>
+                  <span class="pricing-cadence">/ included</span>
                 </div>
                 <p class="pricing-desc">Complete offline desktop sovereignty for solo students, researchers, and writers.</p>
                 
@@ -634,7 +971,7 @@
               </div>
               
               <a href="#download" class="btn-pricing btn-pricing-secondary">
-                <span>Download Core Free</span>
+                <span>Download Core Desktop</span>
               </a>
             </div>
 
@@ -753,7 +1090,7 @@
             <div class="community-card-content">
               <div class="community-badge-top">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.32 4.37A19.8 19.8 0 0 0 15.36 2.8a13.8 13.8 0 0 0-.64 1.33 18.27 18.27 0 0 0-5.44 0 13.8 13.8 0 0 0-.64-1.33 19.8 19.8 0 0 0-4.96 1.57C.54 9.09-.32 13.7.1 18.25a19.9 19.9 0 0 0 6.08 3.05 14.7 14.7 0 0 0 1.3-2.1 12.9 12.9 0 0 1-2.05-.98c.17-.12.34-.25.5-.38a14.1 14.1 0 0 0 12.14 0c.16.13.33.26.5.38-.65.38-1.33.71-2.05.98.37.73.8 1.43 1.3 2.1a19.9 19.9 0 0 0 6.08-3.05c.5-5.27-.85-9.84-3.58-13.88ZM8.03 15.46c-1.18 0-2.16-1.1-2.16-2.44 0-1.35.96-2.45 2.16-2.45 1.2 0 2.18 1.11 2.16 2.45 0 1.35-.96 2.44-2.16 2.44Zm7.94 0c-1.18 0-2.16-1.1-2.16-2.44 0-1.35.96-2.45 2.16-2.45 1.2 0 2.18 1.11 2.16 2.45 0 1.35-.96 2.44-2.16 2.44Z"/></svg>
-                <span>Community &amp; Open Development</span>
+                <span>Community &amp; Product Updates</span>
               </div>
               <h2>Join the ATLAS Community</h2>
               <p>Share study decks, suggest features, test new builds, and discuss learning workflows directly with the developers and other researchers.</p>
@@ -762,9 +1099,9 @@
                   <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20.32 4.37A19.8 19.8 0 0 0 15.36 2.8a13.8 13.8 0 0 0-.64 1.33 18.27 18.27 0 0 0-5.44 0 13.8 13.8 0 0 0-.64-1.33 19.8 19.8 0 0 0-4.96 1.57C.54 9.09-.32 13.7.1 18.25a19.9 19.9 0 0 0 6.08 3.05 14.7 14.7 0 0 0 1.3-2.1 12.9 12.9 0 0 1-2.05-.98c.17-.12.34-.25.5-.38a14.1 14.1 0 0 0 12.14 0c.16.13.33.26.5.38-.65.38-1.33.71-2.05.98.37.73.8 1.43 1.3 2.1a19.9 19.9 0 0 0 6.08-3.05c.5-5.27-.85-9.84-3.58-13.88ZM8.03 15.46c-1.18 0-2.16-1.1-2.16-2.44 0-1.35.96-2.45 2.16-2.45 1.2 0 2.18 1.11 2.16 2.45 0 1.35-.96 2.44-2.16 2.44Zm7.94 0c-1.18 0-2.16-1.1-2.16-2.44 0-1.35.96-2.45 2.16-2.45 1.2 0 2.18 1.11 2.16 2.45 0 1.35-.96 2.44-2.16 2.44Z"/></svg>
                   <span>Join Discord</span>
                 </a>
-                <a href="https://github.com/Resistance-Labs-Tech/atlasface" target="_blank" rel="noopener" class="btn-secondary btn-lg">
-                  <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
-                  <span>GitHub Repository</span>
+                <a href="https://github.com/Resistance-Labs-Tech/atlasface/releases" target="_blank" rel="noopener" class="btn-secondary btn-lg">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  <span>Release Downloads</span>
                 </a>
               </div>
             </div>
@@ -797,5 +1134,48 @@
         </div>
       </div>
     </footer>
+    <script>
+      (function() {
+        const toggleBtn = document.getElementById('mobile-menu-toggle');
+        const drawer = document.getElementById('mobile-nav-drawer');
+        if (toggleBtn && drawer) {
+          toggleBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const isOpen = drawer.classList.toggle('open');
+            toggleBtn.setAttribute('aria-expanded', isOpen);
+            const iconHam = toggleBtn.querySelector('.icon-hamburger');
+            const iconClose = toggleBtn.querySelector('.icon-close');
+            if (iconHam && iconClose) {
+              iconHam.style.display = isOpen ? 'none' : 'block';
+              iconClose.style.display = isOpen ? 'block' : 'none';
+            }
+          });
+          drawer.querySelectorAll('a').forEach(function(link) {
+            link.addEventListener('click', function() {
+              drawer.classList.remove('open');
+              toggleBtn.setAttribute('aria-expanded', 'false');
+              const iconHam = toggleBtn.querySelector('.icon-hamburger');
+              const iconClose = toggleBtn.querySelector('.icon-close');
+              if (iconHam && iconClose) {
+                iconHam.style.display = 'block';
+                iconClose.style.display = 'none';
+              }
+            });
+          });
+          document.addEventListener('click', function(e) {
+            if (!drawer.contains(e.target) && !toggleBtn.contains(e.target) && drawer.classList.contains('open')) {
+              drawer.classList.remove('open');
+              toggleBtn.setAttribute('aria-expanded', 'false');
+              const iconHam = toggleBtn.querySelector('.icon-hamburger');
+              const iconClose = toggleBtn.querySelector('.icon-close');
+              if (iconHam && iconClose) {
+                iconHam.style.display = 'block';
+                iconClose.style.display = 'none';
+              }
+            }
+          });
+        }
+      })();
+    </script>
 </body>
 </html>
