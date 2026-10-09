@@ -38,7 +38,7 @@ import"./style-MYIw6UD5.js";let B=[],b="all",E="",d=null,m=0;document.addEventLi
                     </div>
 
                     <div class="mp-card-actions">
-                        <a href="${o}" class="btn-card-install" title="Launch installer in ATLAS:Face">
+                        <a href="${o}" class="btn-card-install" title="Launch installer in ATLAS Workspace">
                             <span>Install in App</span>
                         </a>
                         ${!t&&e.sampleCards&&e.sampleCards.length>0?`
