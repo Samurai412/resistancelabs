@@ -1,64 +1,48 @@
 # Resistance Labs
 
-> Independent software studio building local-first knowledge systems and calm social platforms.
+> Independent software studio building local-first personal knowledge systems and research tools.
 
 - Canonical URL: https://resistancelabs.tech/
 - Founded: January 2026
 - Headquarters: Amman, Jordan
 - Structure: Bootstrapped Software Studio
 - Founder & Lead Engineer: Abdallah Arabi (abdallah@resistancelabs.tech)
-- Contact: founders@resistancelabs.tech
+- Contact: abdallah@resistancelabs.tech
 - LinkedIn: https://www.linkedin.com/company/resistancelabs
 
 ---
 
 ## Executive Summary
 
-Resistance Labs is an independent software studio building commercial tools for knowledge workers, researchers, and intentional communities. We design applications centered on local-first data ownership, bounded operating sessions, and private intelligence.
+Resistance Labs is an independent software studio building commercial tools for knowledge workers, researchers, graduate scholars, and self-directed learners. Our flagship product is **ATLAS Workspace**, an intelligent spatial personal knowledge environment designed to connect reading, active recall, spatial cards, and 3D maps into a living body of knowledge stored locally on user disk.
 
 ---
 
-## Active Product Portfolio
+## Flagship Product: ATLAS Workspace
 
-### 1. ATLAS Workspace
-- Category: Personal Knowledge System (PKS) & Spatial Reader
-- Status: Production Release v1.0.32
-- Platforms: Windows (.exe), macOS (.dmg), Linux (.AppImage, .deb)
-- Live Portal: https://resistancelabs.tech/#atlas
-- Pricing & Editions:
-  - Core Edition ($0 / forever): Complete offline desktop sovereignty, unlimited local SQLite/Markdown notes, 3D spatial knowledge graph, native PDF/EPUB reader.
-  - ATLAS Pro ($12 / month): Access to AI Features powered by Claude models (turn YouTube videos into structured interactive lectures, generate flashcards from notes, interact and chat with each individual card, generate comprehensive exams, perform multi-document semantic literature synthesis, and encrypted cross-device cloud sync). Subscribed directly inside native desktop application.
-- Core Capabilities: 3D spatial knowledge graph, YouTube video-to-lecture synthesis, interactive card chat & exam generation, integrated active recall flashcards, and local SQLite/Markdown storage.
+- Category: Personal Knowledge System (PKS) & Spatial Research Workspace
+- Status: Production Release v0.0.50
+- Desktop Builds: Windows (.exe), macOS Apple Silicon & Intel (.dmg), Linux (.AppImage, .deb)
+- Live Portal: https://resistancelabs.tech/
+- Documentation: https://resistancelabs.tech/docs.html
+- Community Marketplace: https://resistancelabs.tech/marketplace.html
 
-### 2. Suntown
-- Category: Moderated Daily Social Room & Community Network
-- Status: Live in Production
-- Platform: Progressive Web Application (PWA)
-- Live Portal: https://suntown.town/
-- Public About Page: https://suntown.town/about/
-- Operating Cadence: 4-hour daily Golden Hour ritual (14:00–18:00 UTC), closing completely outside the window.
-- Membership Tiers:
-  - Community Citizen ($0): Daily 4-hour Golden Hour room access via Claude admissions evaluation.
-  - Sustaining Townsfolk ($8 / month): Verified member seal, priority admissions intake queue, full writing archive exports (Markdown/JSON), and retrospective reading digests.
-  - Hosted Private Guild ($49 / month / room): Dedicated time-bounded rooms for remote engineering teams and research labs, configurable ritual hours, and Claude-assisted weekly discussion synthesis.
-- AI Integration: Uses Claude models to evaluate prospective member application responses against community standards and writing commitments prior to admission.
-
-### 3. Developer & Focus Utilities
-- RL-01 Latch: Desktop workspace commitment tool for uninterrupted deep work.
-- RL-02 Reclaim: PWA inhibitory focus training with calibrated brown-noise acoustic masking.
+### Pricing & Monetization Model
+- **Core Edition ($0 / forever)**: Complete offline desktop sovereignty, unlimited local SQLite/Markdown notes, 3D spatial knowledge graph, native PDF/EPUB reader, freehand visual canvas, and Spaced Repetition (SRS) flashcard engine.
+- **ATLAS Pro ($12 / month)**: Production AI features powered by Claude models (multi-document semantic synthesis across dense literature corpuses, interactive video lectures and real-time comprehension quizzes from YouTube transcripts, automated active-recall flashcard authoring from reading highlights, interactive Socratic card chat and practice exam generation, and encrypted end-to-end cloud sync).
 
 ---
 
 ## Technical & AI Architecture
 
-1. **Member Admissions Screening (Claude Models)**:
-   In Suntown, prospective members submit written responses that are evaluated using Claude models to determine whether applicants understand community customs and meet the requirements to participate in the town.
+1. **Multi-Document Literature Synthesis (Claude 3.5 Sonnet)**:
+   In ATLAS Workspace, high-capacity contextual reasoning parses full-length books (EPUBs) and complex research monographs (PDFs) to build conceptual connections across personal research archives and extract key insights.
 
-2. **Semantic Knowledge Synthesis & Recall Generation (Claude Models)**:
-   In ATLAS Workspace, high-capacity contextual reasoning parses full-length books (EPUBs) and academic papers (PDFs) to build conceptual connections across personal research and generate active recall study decks.
+2. **Active Recall & Exam Authoring (Claude Models)**:
+   Structured JSON tool calling transforms reading notes and video transcripts into rigorous spaced-repetition card decks and interactive practice examinations with immediate retention feedback.
 
-3. **Infrastructure & Predictable Scaling**:
-   Local-first architecture keeps infrastructure overhead minimal by keeping primary storage on client devices. Cloud resources and model inference scale predictably with active Pro subscriptions.
+3. **Prompt Caching & Low-Latency Retrieval**:
+   Applies prompt cache breakpoints across static user document corpuses to enable low-latency interactive querying across large libraries without repetitive token processing overhead.
 
-4. **Data Privacy & Ownership**:
-   No third-party ad networks, no telemetry auctions, and no training on user notes. User files reside on local disk in standard SQLite and Markdown formats.
+4. **Data Sovereignty & Local-First Persistence**:
+   Primary user data resides on local disk in SQLite and open Markdown formats. Cloud resources scale predictably with active Pro subscriptions.

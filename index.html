@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resistance Labs — Software for Deep Knowledge & Calm Connection</title>
-    <meta name="description"
-        content="Resistance Labs is an independent software studio building local-first applications: ATLAS spatial knowledge workspace and Suntown daily social network.">
-    <link rel="canonical" href="https://resistancelabs.tech/">
-
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ATLAS Workspace — Spatial Personal Knowledge System</title>
+    <meta name="description" content="Turn what you read, watch, write, and discover into a living spatial knowledge system with notes, active recall flashcards, 3D maps, and Claude AI synthesis.">
+    <link rel="canonical" href="https://resistancelabs.tech/" />
+    <meta name="theme-color" content="#08090c" />
+    
     <!-- Open Graph & Social -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://resistancelabs.tech/">
-    <meta property="og:title" content="Resistance Labs — Software for Deep Knowledge & Calm Connection">
-    <meta property="og:description"
-        content="Independent software studio building local-first tools: ATLAS spatial knowledge workspace and Suntown daily social network.">
-    <meta property="og:image" content="https://resistancelabs.tech/assets/resistance-labs-logo-chroma.png">
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="ATLAS Workspace" />
+    <meta property="og:url" content="https://resistancelabs.tech/" />
+    <meta property="og:title" content="ATLAS Workspace — Spatial Personal Knowledge System" />
+    <meta property="og:description" content="Turn what you read, watch, write, and discover into a living spatial knowledge system with notes, active recall cards, 3D maps, and Claude AI synthesis." />
+    <meta property="og:image" content="https://resistancelabs.tech/journal.png" />
+    <meta property="og:image:secure_url" content="https://resistancelabs.tech/journal.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1920" />
+    <meta property="og:image:height" content="1041" />
+    <meta property="og:image:alt" content="ATLAS Workspace knowledge canvas" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ATLAS Workspace — Spatial Personal Knowledge System" />
+    <meta name="twitter:description" content="Turn what you read, watch, write, and discover into a living spatial knowledge system with notes, active recall cards, 3D maps, and Claude AI synthesis." />
+    <meta name="twitter:image" content="https://resistancelabs.tech/journal.png" />
 
     <!-- Structured Corporate Schema -->
     <script type="application/ld+json">
@@ -36,7 +37,7 @@
           "name": "Resistance Labs",
           "url": "https://resistancelabs.tech/",
           "foundingDate": "2026-01-01",
-          "description": "Independent software studio building local-first personal knowledge tools and moderated social networks.",
+          "description": "Independent software studio building local-first personal knowledge systems and research tools.",
           "founder": {
             "@type": "Person",
             "name": "Abdallah Arabi",
@@ -51,847 +52,747 @@
           "sameAs": [
             "https://www.linkedin.com/company/resistancelabs"
           ],
-          "knowsAbout": ["Personal Knowledge Systems", "Local-First Software", "Semantic Retrieval", "Community Moderation"]
+          "knowsAbout": ["Personal Knowledge Systems", "Local-First Software", "Semantic Retrieval", "Spatial Interfaces"]
         },
         {
           "@type": "SoftwareApplication",
-          "@id": "https://resistancelabs.tech/#atlas",
+          "@id": "https://resistancelabs.tech/#app",
           "name": "ATLAS Workspace",
-          "url": "https://resistancelabs.tech/#product-atlas",
+          "url": "https://resistancelabs.tech/",
           "applicationCategory": "ProductivityApplication",
           "operatingSystem": "Windows, macOS, Linux",
-          "softwareVersion": "1.0.32",
-          "description": "A 3D spatial personal knowledge system with active recall and private semantic literature synthesis."
-        },
-        {
-          "@type": "SoftwareApplication",
-          "@id": "https://suntown.town/#app",
-          "name": "Suntown",
-          "url": "https://suntown.town/",
-          "applicationCategory": "SocialNetworkingApplication",
-          "operatingSystem": "Web",
-          "description": "A moderated daily social room operating on a 4-hour Golden Hour ritual with constitutional moderation."
+          "softwareVersion": "0.0.50",
+          "description": "A 3D spatial personal knowledge system with active recall, YouTube interactive lecture synthesis, and multi-document Claude reasoning.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          }
         }
       ]
     }
     </script>
-</head>
 
-<body>
-    <!-- Top Navigation Bar -->
-    <header class="site-header" id="site-header">
-        <div class="header-inner container">
-            <a href="#hero" class="brand-lockup" aria-label="Resistance Labs">
-                <span class="brand-icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
-                        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
-                        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
-                        <line x1="10" y1="14" x2="14" y2="10" stroke="var(--accent-vermilion)" stroke-width="2.5"></line>
-                    </svg>
-                </span>
-                <span class="brand-title">Resistance Labs</span>
-            </a>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Sora:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Scripts & Styles -->
+    <script type="module" crossorigin src="./assets/main-CBxXNBKZ.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/style-MYIw6UD5.js">
+    <link rel="modulepreload" crossorigin href="./assets/downloads-CsZ6g4RG.js">
+    <link rel="stylesheet" crossorigin href="./assets/style-BAEz_MGp.css">
 
-            <nav class="site-nav" aria-label="Main Navigation">
-                <a href="#products">Products</a>
-                <a href="#instruments">Instruments</a>
-                <a href="#principles">Principles</a>
-                <a href="#company">Company</a>
-            </nav>
+    <!-- Scoped Pricing & Corporate Styles -->
+    <style>
+      .pricing-section {
+        padding: 6rem 0;
+        position: relative;
+        border-top: 1px solid rgba(255, 255, 255, 0.06);
+      }
+      .pricing-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 2rem;
+        max-width: 960px;
+        margin: 3rem auto 0;
+      }
+      .pricing-card {
+        background: rgba(18, 20, 26, 0.7);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 16px;
+        padding: 2.5rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        backdrop-filter: blur(12px);
+        transition: transform 0.2s ease, border-color 0.2s ease;
+      }
+      .pricing-card:hover {
+        transform: translateY(-4px);
+        border-color: rgba(255, 255, 255, 0.16);
+      }
+      .pricing-card-featured {
+        background: rgba(22, 25, 34, 0.85);
+        border-color: rgba(255, 90, 60, 0.4);
+        box-shadow: 0 0 40px rgba(255, 90, 60, 0.08);
+      }
+      .pricing-badge-pro {
+        position: absolute;
+        top: -12px;
+        right: 24px;
+        background: #ff5a3c;
+        color: #fff;
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        padding: 4px 12px;
+        border-radius: 20px;
+        text-transform: uppercase;
+      }
+      .pricing-tier-name {
+        font-family: 'Sora', sans-serif;
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 0.5rem;
+      }
+      .pricing-price {
+        font-family: 'Sora', sans-serif;
+        font-size: 2.75rem;
+        font-weight: 800;
+        color: #fff;
+        display: flex;
+        align-items: baseline;
+        gap: 0.25rem;
+        margin-bottom: 0.75rem;
+      }
+      .pricing-cadence {
+        font-size: 0.95rem;
+        font-weight: 500;
+        color: #8c93a8;
+      }
+      .pricing-desc {
+        color: #a4adca;
+        font-size: 0.92rem;
+        line-height: 1.5;
+        margin-bottom: 2rem;
+      }
+      .pricing-features {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 2.5rem 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.85rem;
+      }
+      .pricing-features li {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.75rem;
+        font-size: 0.9rem;
+        color: #d1d6e8;
+        line-height: 1.45;
+      }
+      .pricing-features li svg {
+        flex-shrink: 0;
+        width: 18px;
+        height: 18px;
+        color: #2ed573;
+        margin-top: 2px;
+      }
+      .pricing-features li.pro-highlight {
+        color: #fff;
+      }
+      .pricing-features li.pro-highlight svg {
+        color: #ff5a3c;
+      }
+      .btn-pricing {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 0.85rem 1.5rem;
+        border-radius: 10px;
+        font-weight: 600;
+        font-size: 0.95rem;
+        text-decoration: none;
+        transition: all 0.2s ease;
+      }
+      .btn-pricing-secondary {
+        background: rgba(255, 255, 255, 0.06);
+        color: #fff;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+      }
+      .btn-pricing-secondary:hover {
+        background: rgba(255, 255, 255, 0.12);
+      }
+      .btn-pricing-pro {
+        background: #ff5a3c;
+        color: #fff;
+        border: 1px solid rgba(255, 90, 60, 0.6);
+        box-shadow: 0 4px 16px rgba(255, 90, 60, 0.25);
+      }
+      .btn-pricing-pro:hover {
+        background: #ff4020;
+        transform: translateY(-1px);
+      }
+      .footer-studio-info {
+        font-size: 0.82rem;
+        color: #7b849e;
+        margin-top: 0.5rem;
+        line-height: 1.4;
+      }
+      .footer-studio-info a {
+        color: #a4adca;
+        text-decoration: none;
+      }
+      .footer-studio-info a:hover {
+        color: #fff;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- App Noise SVG Texture -->
+    <svg class="grain-svg" viewBox="0 0 400 400" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <filter id="noiseFilter">
+        <feTurbulence type="fractalNoise" baseFrequency="1.25" numOctaves="2" seed="23" stitchTiles="stitch"/>
+        <feColorMatrix type="saturate" values="0"/>
+        <feComponentTransfer>
+          <feFuncR type="discrete" tableValues=".32 .46 .58 .7 .82 1"/>
+          <feFuncG type="discrete" tableValues=".32 .46 .58 .7 .82 1"/>
+          <feFuncB type="discrete" tableValues=".32 .46 .58 .7 .82 1"/>
+          <feFuncA type="table" tableValues="0 .68"/>
+        </feComponentTransfer>
+      </filter>
+      <rect width="100%" height="100%" filter="url(#noiseFilter)"/>
+    </svg>
 
-            <div class="header-cta">
-                <a href="https://www.linkedin.com/company/resistancelabs" target="_blank" rel="noopener noreferrer" class="btn-icon" aria-label="Resistance Labs on LinkedIn" title="LinkedIn">
-                    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
-                    </svg>
-                </a>
-                <a href="mailto:founders@resistancelabs.tech" class="btn btn-secondary">
-                    <span>Contact Studio</span>
-                </a>
-                <a href="#products" class="btn btn-primary">
-                    <span>Explore Products</span>
-                </a>
-            </div>
+    <!-- Header / Navbar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#" class="logo">
+          <img src="final.webp" alt="ATLAS Workspace Logo" width="28" height="28" decoding="async" />
+          <span class="logo-text">ATLAS<span class="logo-accent"> Workspace</span></span>
+        </a>
+        <div class="nav-links">
+          <a href="#features" class="nav-link">Features</a>
+          <a href="#capabilities" class="nav-link">Capabilities</a>
+          <a href="#pricing" class="nav-link">Pricing</a>
+          <a href="marketplace.html" class="nav-link">Marketplace</a>
+          <a href="docs.html" class="nav-link">Docs</a>
+          <a href="https://discord.com/invite/Y2RJkDJRW2" target="_blank" rel="noopener" class="nav-link">Discord</a>
+          <a href="#download" class="btn-primary btn-nav">
+            Download
+          </a>
         </div>
-    </header>
+      </div>
+    </nav>
 
     <main id="main-content">
-        <!-- Hero Section -->
-        <section id="hero" class="hero-section">
-            <div class="container hero-grid">
-                <div class="hero-copy">
-                    <div class="hero-meta-bar">
-                        <div class="hud-pill">
-                            <span class="pulse-dot"></span>
-                            <span>STUDIO ACTIVE · AMMAN, JORDAN</span>
-                        </div>
-                        <div class="hud-pill">
-                            <span>EST. 2026 · BOOTSTRAPPED</span>
-                        </div>
-                    </div>
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="hero-container">
 
-                    <h1 class="hero-title">
-                        Software engineered for depth, not distraction.
-                    </h1>
+          <h1 class="hero-title">
+            Your notes, books, and thoughts.<br />
+            <span class="gradient-text">Connected in one spatial universe.</span>
+          </h1>
 
-                    <p class="hero-subhead">
-                        Resistance Labs builds local-first applications for knowledge workers and intentional communities. 
-                        Shipped products include <strong>ATLAS Workspace</strong>, a spatial personal knowledge workspace, and <strong>Suntown</strong>, a time-capped daily social network.
-                    </p>
+          <p class="hero-subtitle">
+            Drop in PDFs, EPUBs, video lectures, and notes. ATLAS connects your reading, active recall, spatial cards, and 3D maps into a living body of knowledge you own on your disk.
+          </p>
 
-                    <div class="hero-actions">
-                        <a href="#atlas" class="btn btn-vermilion">
-                            <span>Explore ATLAS Workspace v1.0.32</span>
-                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
-                                <path d="M5 12h14"></path>
-                                <path d="M12 5l7 7-7 7"></path>
-                            </svg>
-                        </a>
-                        <a href="#suntown" class="btn btn-gold">
-                            <span>Enter Suntown (14:00 UTC)</span>
-                        </a>
-                    </div>
+          <div class="hero-actions">
+            <a href="https://github.com/Resistance-Labs-Tech/atlasface/releases/download/v0.0.50/ATLASFace-Setup-0.0.50.exe" id="primary-download-btn" class="btn-primary btn-hero" data-download-kind="windows-installer" download>
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span id="primary-download-text">Download App</span>
+              <span class="build-tag" data-release-tag>v0.0.50</span>
+            </a>
+            <div class="download-dropdown-wrapper">
+              <button type="button" class="btn-secondary btn-hero dropdown-trigger" id="platform-dropdown-btn">
+                <span>Platforms</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+              <div class="dropdown-menu" id="platform-dropdown-menu">
+                <a href="https://github.com/Resistance-Labs-Tech/atlasface/releases/download/v0.0.50/ATLASFace-Setup-0.0.50.exe" data-download-kind="windows-installer" download class="dropdown-item">
+                  <strong>Windows</strong> <span>.exe Installer</span>
+                </a>
+                <a href="https://github.com/Resistance-Labs-Tech/atlasface/releases/download/v0.0.50/ATLASFace-0.0.50-arm64.dmg" data-download-kind="macos-arm64" download class="dropdown-item">
+                  <strong>macOS</strong> <span>Apple Silicon</span>
+                </a>
+                <a href="https://github.com/Resistance-Labs-Tech/atlasface/releases/download/v0.0.50/ATLASFace-0.0.50-x64.dmg" data-download-kind="macos-x64" download class="dropdown-item">
+                  <strong>macOS</strong> <span>Intel</span>
+                </a>
+                <a href="https://github.com/Resistance-Labs-Tech/atlasface/releases/download/v0.0.50/ATLASFace-0.0.50.AppImage" data-download-kind="linux-appimage" download class="dropdown-item">
+                  <strong>Linux</strong> <span>AppImage</span>
+                </a>
+                <a href="https://github.com/Resistance-Labs-Tech/atlasface/releases/download/v0.0.50/ATLASFace-0.0.50.deb" data-download-kind="linux-deb" download class="dropdown-item">
+                  <strong>Linux</strong> <span>.deb</span>
+                </a>
+              </div>
+            </div>
+            <a href="https://discord.com/invite/Y2RJkDJRW2" target="_blank" rel="noopener" class="btn-secondary btn-hero">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20.32 4.37A19.8 19.8 0 0 0 15.36 2.8a13.8 13.8 0 0 0-.64 1.33 18.27 18.27 0 0 0-5.44 0 13.8 13.8 0 0 0-.64-1.33 19.8 19.8 0 0 0-4.96 1.57C.54 9.09-.32 13.7.1 18.25a19.9 19.9 0 0 0 6.08 3.05 14.7 14.7 0 0 0 1.3-2.1 12.9 12.9 0 0 1-2.05-.98c.17-.12.34-.25.5-.38a14.1 14.1 0 0 0 12.14 0c.16.13.33.26.5.38-.65.38-1.33.71-2.05.98.37.73.8 1.43 1.3 2.1a19.9 19.9 0 0 0 6.08-3.05c.5-5.27-.85-9.84-3.58-13.88ZM8.03 15.46c-1.18 0-2.16-1.1-2.16-2.44 0-1.35.96-2.45 2.16-2.45 1.2 0 2.18 1.11 2.16 2.45 0 1.35-.96 2.44-2.16 2.44Zm7.94 0c-1.18 0-2.16-1.1-2.16-2.44 0-1.35.96-2.45 2.16-2.45 1.2 0 2.18 1.11 2.16 2.45 0 1.35-.96 2.44-2.16 2.44Z"/></svg>
+              <span>Join Discord</span>
+            </a>
+          </div>
+
+          <!-- Desktop App Window Frame Mockup -->
+          <div class="hero-mockup-wrapper">
+            <div class="window-frame">
+              <div class="window-header">
+                <div class="window-dots">
+                  <span class="dot dot-close"></span>
+                  <span class="dot dot-minimize"></span>
+                  <span class="dot dot-expand"></span>
                 </div>
+                <div class="window-title">ATLAS Workspace — Personal Research Environment</div>
+              </div>
 
-                <div class="hero-cockpit" aria-hidden="true">
-                    <div class="cockpit-header">
-                        <span class="mono-hud">RESISTANCE-LABS // SPEC-01</span>
-                        <span class="hud-pill"><span class="pulse-dot"></span> LIVE IN PRODUCTION</span>
-                    </div>
-                    <div class="cockpit-display">
-                        <img src="assets/resistance-labs-severed-loop-transparent.png" alt="Resistance Labs Hardware Emblem" class="cockpit-emblem">
-                    </div>
-                    <div class="cockpit-telemetry">
-                        <div class="telemetry-row">
-                            <span>PRIMARY FOCUS</span>
-                            <strong>LOCAL-FIRST SOFTWARE</strong>
-                        </div>
-                        <div class="telemetry-row">
-                            <span>STORAGE ENGINE</span>
-                            <strong>SQLITE / OPEN MARKDOWN</strong>
-                        </div>
-                        <div class="telemetry-row">
-                            <span>HEADQUARTERS</span>
-                            <strong>AMMAN, JORDAN</strong>
-                        </div>
-                    </div>
+              <div class="window-body">
+                <picture>
+                  <source type="image/webp" media="(max-width: 768px)" srcset="journal-mobile.webp">
+                  <source type="image/webp" srcset="journal.webp">
+                  <source type="image/png" media="(max-width: 768px)" srcset="journal.png">
+                  <img src="journal.webp" alt="ATLAS Workspace Main Canvas" class="mockup-img" width="1080" height="675" fetchpriority="high" decoding="async" />
+                </picture>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Interactive Feature Studio Section -->
+      <section class="studio-section" id="features">
+        <div class="section-container">
+          <div class="section-header text-center">
+            <h2 class="section-title">Designed for how your mind actually works</h2>
+            <p class="section-subtitle">No scattered browser tabs, no proprietary locks. Everything you read, sketch, and learn stays in sync in one desktop application.</p>
+          </div>
+
+          <!-- Feature Studio Tabs Navigation -->
+          <div class="studio-tabs-nav" role="tablist">
+            <button role="tab" aria-selected="true" class="studio-tab active" data-tab="tab-map">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M3 12h3m12 0h3M12 3v3m0 12v3"></path></svg>
+              <span>Universe Map</span>
+            </button>
+            <button role="tab" aria-selected="false" class="studio-tab" data-tab="tab-reader">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+              <span>Deep Reader</span>
+            </button>
+            <button role="tab" aria-selected="false" class="studio-tab" data-tab="tab-canvas">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path></svg>
+              <span>Canvas & Sketch</span>
+            </button>
+            <button role="tab" aria-selected="false" class="studio-tab" data-tab="tab-cards">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="M7 15h10M7 9h6"></path></svg>
+              <span>Spatial Cards & AI</span>
+            </button>
+            <button role="tab" aria-selected="false" class="studio-tab" data-tab="tab-youtube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
+              <span>YouTube AI Quiz</span>
+            </button>
+            <button role="tab" aria-selected="false" class="studio-tab" data-tab="tab-publish">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              <span>Web Publishing</span>
+            </button>
+          </div>
+
+          <!-- Feature Studio Content Panels -->
+          <div class="studio-panels">
+            
+            <!-- Panel 1: Knowledge Map -->
+            <div class="studio-panel active" id="tab-map" role="tabpanel">
+              <div class="panel-layout">
+                <div class="panel-info">
+                  <h3>Knowledge Universe Map</h3>
+                  <p>Transform isolated documents into a living neural web. Connect books, notes, topics, and flashcards into an interactive map that helps you locate missing links and revisit past insights.</p>
+                  <ul class="panel-bullets">
+                    <li>3D node graph visualization with real-time physics</li>
+                    <li>Bi-directional linking between documents & cards</li>
+                    <li>Cluster discovery by domain or tag</li>
+                  </ul>
                 </div>
+                <div class="panel-media">
+                  <div class="media-frame">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 768px)" srcset="knowledgeuniverse-mobile.webp">
+                      <source type="image/webp" srcset="knowledgeuniverse.webp">
+                      <img src="knowledgeuniverse.webp" alt="Knowledge Universe Map in ATLAS Workspace" loading="lazy" decoding="async" width="800" height="500" />
+                    </picture>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <!-- Studio Telemetry Strip -->
-            <div class="container">
-                <div class="studio-strip">
-                    <div class="strip-item">
-                        <span class="label">Desktop Ecosystem</span>
-                        <span class="val">ATLAS Workspace v1.0.32</span>
-                        <span class="sub">Windows · macOS · Linux</span>
-                    </div>
-                    <div class="strip-item">
-                        <span class="label">Community Cadence</span>
-                        <span class="val">Suntown Protocol</span>
-                        <span class="sub">14:00 – 18:00 UTC Daily</span>
-                    </div>
-                    <div class="strip-item">
-                        <span class="label">Data Architecture</span>
-                        <span class="val">Local-First Storage</span>
-                        <span class="sub">User-Owned Files & SQLite</span>
-                    </div>
-                    <div class="strip-item">
-                        <span class="label">Corporate Structure</span>
-                        <span class="val">Bootstrapped Studio</span>
-                        <span class="sub">Self-Funded & Independent</span>
-                    </div>
+            <!-- Panel 2: Deep Reader -->
+            <div class="studio-panel" id="tab-reader" role="tabpanel">
+              <div class="panel-layout">
+                <div class="panel-info">
+                  <h3>Native PDF & EPUB Reader</h3>
+                  <p>Read textbooks, research papers, and books directly inside the workspace. Extract highlights directly into active-recall flashcards or margin notes without switching apps.</p>
+                  <ul class="panel-bullets">
+                    <li>Native PDF and EPUB rendering</li>
+                    <li>Instant highlight-to-card pipeline</li>
+                    <li>Split-screen side-by-side note taking</li>
+                  </ul>
                 </div>
+                <div class="panel-media">
+                  <div class="media-frame">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 768px)" srcset="readingepub-mobile.webp">
+                      <source type="image/webp" srcset="readingepub.webp">
+                      <img src="readingepub.webp" alt="PDF and EPUB Reader View" loading="lazy" decoding="async" width="800" height="500" />
+                    </picture>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
 
-        <!-- Product 01 & 02: Shipped Software Products -->
-        <section id="products" class="section products-section">
-            <div class="container">
-                <div class="section-head">
-                    <p class="section-kicker">01 / Shipped Software Products</p>
-                    <h2 class="section-title">Production software built for knowledge and community.</h2>
-                    <p class="section-desc">
-                        We design and operate production software with active user adoption and cross-platform desktop releases.
-                    </p>
+            <!-- Panel 3: Canvas & Sketch -->
+            <div class="studio-panel" id="tab-canvas" role="tabpanel">
+              <div class="panel-layout">
+                <div class="panel-info">
+                  <h3>Visual Canvas & Drawing</h3>
+                  <p>Write, sketch, and diagram freehand alongside your reading material. Combine typed markdown with fluid handwriting for complex concepts that text alone cannot capture.</p>
+                  <ul class="panel-bullets">
+                    <li>Pen & tablet drawing support</li>
+                    <li>Embedded topic canvas diagrams</li>
+                    <li>Seamless combination of handwriting and text</li>
+                  </ul>
                 </div>
-
-                <!-- Product 1: ATLAS Workspace -->
-                <article id="atlas" class="product-dossier">
-                    <div class="dossier-top">
-                        <div class="dossier-info">
-                            <div class="dossier-meta-tags">
-                                <span class="tag-product tag-cyan">FLAGSHIP DESKTOP SYSTEM</span>
-                                <span class="tag-product">v1.0.32 STABLE</span>
-                                <span class="tag-product" style="background: rgba(255, 77, 54, 0.15); color: var(--accent-vermilion); border-color: rgba(255, 77, 54, 0.35);">ATLAS PRO AVAILABLE</span>
-                            </div>
-                            <h3 class="product-name">ATLAS Workspace</h3>
-                            <p class="product-tagline">Personal Knowledge System & Spatial Research Workspace</p>
-                            
-                            <div class="pricing-badge">
-                                <span>Free Offline Core · ATLAS Pro ($12/mo)</span>
-                            </div>
-
-                            <p class="product-summary">
-                                Professional research is fractured across browser tabs, PDFs, and ephemeral notes. 
-                                ATLAS transforms academic papers, books (EPUBs), and research thoughts into an indexed 3D spatial knowledge universe stored locally on your disk.
-                            </p>
-
-                            <div class="feature-list">
-                                <div class="feature-item">
-                                    <div class="feature-icon-box">
-                                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                            <circle cx="18" cy="5" r="3"></circle>
-                                            <circle cx="6" cy="12" r="3"></circle>
-                                            <circle cx="18" cy="19" r="3"></circle>
-                                            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
-                                            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <h4>3D Spatial Knowledge Graph</h4>
-                                        <p>Discover unexpected conceptual bridges across years of research with real-time vector clustering and local graph physics.</p>
-                                    </div>
-                                </div>
-
-                                <div class="feature-item">
-                                    <div class="feature-icon-box">
-                                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-                                            <polyline points="2 17 12 22 22 17"></polyline>
-                                            <polyline points="2 12 12 17 22 12"></polyline>
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <h4>Deep Semantic Synthesis (Claude AI)</h4>
-                                        <p>Access Claude contextual reasoning directly inside your local archive. Query dozens of papers at once to synthesize core claims without cloud note lock-in.</p>
-                                    </div>
-                                </div>
-
-                                <div class="feature-item">
-                                    <div class="feature-icon-box">
-                                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-                                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <h4>Interactive Lectures, Card Chat & Exams</h4>
-                                        <p>Turn YouTube videos into structured interactive lectures. Generate flashcards from notes, interact and chat with each card, and generate comprehensive exams powered by Claude.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
-                                <a href="#atlas-tiers" class="btn btn-vermilion">
-                                    <span>Download ATLAS Workspace</span>
-                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
-                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                                        <polyline points="7 10 12 15 17 10"></polyline>
-                                        <line x1="12" y1="15" x2="12" y2="3"></line>
-                                    </svg>
-                                </a>
-                                <a href="#atlas-tiers" class="btn btn-secondary">
-                                    <span>Compare Plans</span>
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- App Mock Window -->
-                        <div class="app-frame" aria-hidden="true">
-                            <div class="frame-titlebar">
-                                <div class="window-dots">
-                                    <span></span><span></span><span></span>
-                                </div>
-                                <div>ATLAS Workspace — Spatial Synthesis Canvas</div>
-                                <div>v1.0.32</div>
-                            </div>
-                            <div class="frame-content">
-                                <div class="spatial-canvas-mock">
-                                    <div class="node center-node">Distributed_Systems.db</div>
-                                    <div class="node leaf-1">CRDTs & Consensus</div>
-                                    <div class="node leaf-2">Local_Vector_Store</div>
-                                    <div class="node leaf-3">Recall_Loop (84%)</div>
-                                    <div class="graph-stats">4,812 Nodes · 12,490 Edges · Latency 0.4ms</div>
-                                </div>
-                                <div class="mock-ai-banner">
-                                    <div class="mock-ai-pill">
-                                        <span class="pulse-dot"></span>
-                                        <span>ATLAS PRO AI ENGINE ACTIVE</span>
-                                    </div>
-                                    <span class="mock-ai-meta">Claude 3.5 Sonnet · Video Lecture Synthesized · 12 Flashcards</span>
-                                </div>
-                                <div style="display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted); padding-top: 0.5rem; border-top: 1px solid var(--border-hairline);">
-                                    <span>LOCAL STORAGE: OK</span>
-                                    <span>ENCRYPTION: AES-GCM</span>
-                                    <span>AI INFERENCE: ONLINE</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Plans & Licensing Matrix -->
-                    <div id="atlas-tiers" class="dossier-tiers-section">
-                        <div class="tiers-header">
-                            <div>
-                                <span class="mono-hud">PLANS & LICENSING</span>
-                                <h4 class="tiers-title">Choose the edition for your workflow.</h4>
-                            </div>
-                            <div class="tiers-tagline">
-                                <span>Free Offline Desktop · Optional Cloud AI Services</span>
-                            </div>
-                        </div>
-                        <div class="tiers-grid tiers-grid-2col">
-                            <!-- Core Free Tier -->
-                            <div class="tier-card">
-                                <div class="tier-header-block">
-                                    <span class="tier-level">CORE EDITION</span>
-                                    <div class="tier-price-row">
-                                        <span class="price-symbol">$</span><span class="price-amount">0</span>
-                                        <span class="price-cadence">/ forever</span>
-                                    </div>
-                                    <p class="tier-subtext">Complete offline desktop sovereignty for solo students and independent researchers.</p>
-                                </div>
-                                <ul class="tier-checklist">
-                                    <li>
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                        <span>Unlimited local SQLite & Markdown notes</span>
-                                    </li>
-                                    <li>
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                        <span>3D spatial knowledge graph visualization</span>
-                                    </li>
-                                    <li>
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                        <span>EPUB & PDF reader with inline annotations</span>
-                                    </li>
-                                    <li>
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                        <span>Manual active recall card authoring</span>
-                                    </li>
-                                </ul>
-                                <div class="tier-footer">
-                                    <a href="mailto:abdallah@resistancelabs.tech?subject=ATLAS%20Workspace%20Download" class="btn btn-secondary btn-full">
-                                        <span>Download Core Free</span>
-                                    </a>
-                                    <p class="tier-footnote">Local-first on your disk · Windows / Mac / Linux</p>
-                                </div>
-                            </div>
-
-                            <!-- ATLAS Pro Tier -->
-                            <div class="tier-card tier-card-featured">
-                                <div class="tier-featured-flag">
-                                    <span>ACCESS TO AI FEATURES</span>
-                                </div>
-                                <div class="tier-header-block">
-                                    <span class="tier-level tier-level-pro">ATLAS PRO</span>
-                                    <div class="tier-price-row">
-                                        <span class="price-symbol">$</span><span class="price-amount">12</span>
-                                        <span class="price-cadence">/ month</span>
-                                    </div>
-                                    <p class="tier-subtext">For power researchers who synthesize dense paper corpuses, books, and literature.</p>
-                                </div>
-                                <ul class="tier-checklist">
-                                    <li class="check-highlight">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                        <span><strong>Access to AI Features:</strong> Multi-document Claude semantic synthesis across your local archive</span>
-                                    </li>
-                                    <li class="check-highlight">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                        <span><strong>Interactive Video Lectures:</strong> Turn YouTube videos into structured interactive lectures & notes</span>
-                                    </li>
-                                    <li class="check-highlight">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                        <span><strong>AI Flashcards from Notes:</strong> Generate active recall decks directly from highlighted passages</span>
-                                    </li>
-                                    <li class="check-highlight">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                        <span><strong>Card Chat & Examination:</strong> Interact and chat with each card, test retention, and generate exams</span>
-                                    </li>
-                                    <li>
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                        <span>Encrypted end-to-end cloud sync & snapshot backups</span>
-                                    </li>
-                                    <li>
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                        <span>Priority Claude model inference throughput</span>
-                                    </li>
-                                </ul>
-                                <div class="tier-footer">
-                                    <a href="mailto:abdallah@resistancelabs.tech?subject=ATLAS%20Pro%20Access" class="btn btn-vermilion btn-full">
-                                        <span>Download App to Subscribe to Pro</span>
-                                    </a>
-                                    <p class="tier-footnote">Pro plan activated directly inside desktop client</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Platform Selector Bar -->
-                    <div class="platform-selector">
-                        <span class="mono-hud" style="color: var(--text-muted);">DOWNLOAD NATIVE PACKAGES:</span>
-                        <div class="platform-tabs">
-                            <a href="mailto:abdallah@resistancelabs.tech?subject=ATLAS%20Windows%20Build" class="platform-pill">
-                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-13.051-1.802"/></svg>
-                                <span>Windows x64 (.exe)</span>
-                            </a>
-                            <a href="mailto:abdallah@resistancelabs.tech?subject=ATLAS%20macOS%20Build" class="platform-pill">
-                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.62-.75 1.04-1.8 1.01-2.87-.96.04-2.12.64-2.79 1.43-.59.68-1.1 1.77-1.04 2.82 1.07.08 2.18-.55 2.82-1.38z"/></svg>
-                                <span>macOS Universal (.dmg)</span>
-                            </a>
-                            <a href="mailto:abdallah@resistancelabs.tech?subject=ATLAS%20Linux%20Build" class="platform-pill">
-                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.002 0C5.372 0 0 5.372 0 12c0 5.302 3.438 9.8 8.207 11.387.6.111.82-.261.82-.577v-2.234c-3.338.726-4.043-1.415-4.043-1.415-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.218.694.825.576C20.565 21.796 24 17.3 24 12c0-6.628-5.373-12-11.998-12z"/></svg>
-                                <span>Linux (.AppImage / .deb)</span>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Product 2: Suntown -->
-                <article id="suntown" class="product-dossier">
-                    <div class="dossier-top">
-                        <div class="dossier-info">
-                            <div class="dossier-meta-tags">
-                                <span class="tag-product tag-gold">MODERATED DAILY SOCIAL ROOM</span>
-                                <span class="tag-product">14:00 – 18:00 UTC RITUAL</span>
-                            </div>
-                            <h3 class="product-name">Suntown</h3>
-                            <p class="product-tagline">A Time-Capped Gathering Space for Deliberate Public Writing</p>
-
-                            <div class="pricing-badge">
-                                <span>Free Community Admission · Optional Sustaining Membership ($8/mo)</span>
-                            </div>
-
-                            <p class="product-summary">
-                                Built against 24/7 algorithmic feeds. Suntown operates on a strict daily ritual: 
-                                it opens for a single 4-hour Golden Hour (14:00 to 18:00 UTC) and closes completely for the remaining twenty hours to protect offline human life.
-                            </p>
-
-                            <div class="feature-list">
-                                <div class="feature-item">
-                                    <div class="feature-icon-box" style="color: var(--accent-gold);">
-                                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                            <circle cx="12" cy="12" r="10"></circle>
-                                            <polyline points="12 6 12 12 16 14"></polyline>
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <h4>The Golden Hour Protocol</h4>
-                                        <p>Strictly bounded from 14:00 to 18:00 UTC. When the town closes, it sleeps. No midnight push notifications.</p>
-                                    </div>
-                                </div>
-
-                                <div class="feature-item">
-                                    <div class="feature-icon-box" style="color: var(--accent-gold);">
-                                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                                            <circle cx="9" cy="7" r="4"></circle>
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <h4>Human-Scale 1,000-Seat Cohorts</h4>
-                                        <p>Capped rooms where people recognize names and conversations stay authentic rather than descending into mob behavior.</p>
-                                    </div>
-                                </div>
-
-                                <div class="feature-item">
-                                    <div class="feature-icon-box" style="color: var(--accent-gold);">
-                                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <h4>Claude-Powered Admissions Screening</h4>
-                                        <p>Applicant responses are evaluated using Claude models to determine whether prospective members meet community customs and writing requirements before admission.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
-                                <a href="https://suntown.town/" target="_blank" rel="noopener noreferrer" class="btn btn-gold">
-                                    <span>Enter Suntown</span>
-                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
-                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                        <polyline points="15 3 21 3 21 9"></polyline>
-                                        <line x1="10" y1="14" x2="21" y2="3"></line>
-                                    </svg>
-                                </a>
-                                <a href="https://suntown.town/about/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-                                    <span>Read About Page</span>
-                                </a>
-                                <a href="#suntown-tiers" class="btn btn-secondary">
-                                    <span>View Memberships</span>
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- Live Golden Hour Chronometer Box -->
-                        <div class="suntown-chronometer-box" id="suntown-widget">
-                            <div class="chrono-header">
-                                <span class="mono-hud">SUNTOWN CHRONOMETER</span>
-                                <span class="hud-pill" id="gh-status-badge">CALCULATING...</span>
-                            </div>
-                            <div>
-                                <div class="clock-display" id="gh-countdown">--:--:--</div>
-                                <p class="chrono-status-text" id="gh-status-text">
-                                    Suntown opens daily for Golden Hour from 14:00 to 18:00 UTC.
-                                </p>
-                            </div>
-                            <div class="chrono-queue-meta">
-                                <span>ADMISSIONS: CLAUDE EVALUATION ACTIVE</span>
-                                <span>CAP: 1,000 PER COHORT</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Community Memberships & Guilds -->
-                    <div id="suntown-tiers" class="dossier-tiers-section">
-                        <div class="tiers-header">
-                            <div>
-                                <span class="mono-hud" style="color: var(--accent-gold);">MEMBERSHIP & COMMUNITY ACCESS</span>
-                                <h4 class="tiers-title">Choose how you participate.</h4>
-                            </div>
-                            <div class="tiers-tagline">
-                                <span>Free Community Access · Optional Patron Support</span>
-                            </div>
-                        </div>
-                        <div class="tiers-grid">
-                            <!-- Free Citizen Tier -->
-                            <div class="tier-card">
-                                <div class="tier-header-block">
-                                    <span class="tier-level">COMMUNITY CITIZEN</span>
-                                    <div class="tier-price-row">
-                                        <span class="price-symbol">$</span><span class="price-amount">0</span>
-                                        <span class="price-cadence">/ free admission</span>
-                                    </div>
-                                    <p class="tier-subtext">Access granted via prospective member written application and Claude evaluation.</p>
-                                </div>
-                                <ul class="tier-checklist">
-                                    <li>
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                        <span>Daily 4-hour Golden Hour window (14:00 – 18:00 UTC)</span>
-                                    </li>
-                                    <li>
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                        <span>Automated Claude admissions screening</span>
-                                    </li>
-                                    <li>
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                        <span>Public town writing, discourse, and replies</span>
-                                    </li>
-                                    <li>
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                        <span>Protected by bounded 1,000-seat cohort limit</span>
-                                    </li>
-                                </ul>
-                                <div class="tier-footer">
-                                    <a href="https://suntown.town/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-full">
-                                        <span>Apply for Admission</span>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <!-- Sustaining Member Tier -->
-                            <div class="tier-card tier-card-featured tier-card-gold">
-                                <div class="tier-featured-flag tier-flag-gold">
-                                    <span>SUSTAINING PATRON</span>
-                                </div>
-                                <div class="tier-header-block">
-                                    <span class="tier-level tier-level-gold">SUSTAINING TOWNSFOLK</span>
-                                    <div class="tier-price-row">
-                                        <span class="price-symbol">$</span><span class="price-amount">8</span>
-                                        <span class="price-cadence">/ month</span>
-                                    </div>
-                                    <p class="tier-subtext">Directly fund the operational servers and keep Suntown independent and ad-free.</p>
-                                </div>
-                                <ul class="tier-checklist">
-                                    <li class="check-highlight check-gold">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                        <span><strong>Verified Member Seal:</strong> Custom gold townsfolk badge on profile</span>
-                                    </li>
-                                    <li>
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                        <span>Priority admissions intake queue</span>
-                                    </li>
-                                    <li>
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                        <span>Full personal writing archive exports (Markdown / JSON)</span>
-                                    </li>
-                                    <li>
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                        <span>Golden Hour retrospective digests & reading ledger</span>
-                                    </li>
-                                </ul>
-                                <div class="tier-footer">
-                                    <a href="https://suntown.town/" target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-full">
-                                        <span>Support as Sustaining Member</span>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <!-- Hosted Guild Tier -->
-                            <div class="tier-card">
-                                <div class="tier-header-block">
-                                    <span class="tier-level">PRIVATE GUILDS</span>
-                                    <div class="tier-price-row">
-                                        <span class="price-symbol">$</span><span class="price-amount">49</span>
-                                        <span class="price-cadence">/ room / mo</span>
-                                    </div>
-                                    <p class="tier-subtext">Dedicated time-bounded daily rooms for remote companies, labs, and cohorts.</p>
-                                </div>
-                                <ul class="tier-checklist">
-                                    <li>
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                        <span>Private town instance on custom subdomain</span>
-                                    </li>
-                                    <li>
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                        <span>Configurable Golden Hour time window & timezone</span>
-                                    </li>
-                                    <li>
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                        <span>Claude-assisted synthesis of weekly group discussions</span>
-                                    </li>
-                                    <li>
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                        <span>Zero distraction guarantee — room closes automatically</span>
-                                    </li>
-                                </ul>
-                                <div class="tier-footer">
-                                    <a href="mailto:founders@resistancelabs.tech?subject=Suntown%20Private%20Guild%20Inquiry" class="btn btn-secondary btn-full">
-                                        <span>Inquire for Guild Instance</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
+                <div class="panel-media">
+                  <div class="media-frame">
+                    <video src="drawingintopicview.mp4" poster="drawingintopicview-poster.webp" muted loop playsinline preload="none"></video>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
 
-        <!-- Section 02: Instruments & Utilities -->
-        <section id="instruments" class="section instruments-section">
-            <div class="container">
-                <div class="section-head">
-                    <p class="section-kicker">02 / Instruments & Utilities</p>
-                    <h2 class="section-title">Field utilities engineered for attention defense.</h2>
-                    <p class="section-desc">
-                        Focused companion tools and cultural marks developed alongside our primary applications.
-                    </p>
+            <!-- Panel 4: Cards & AI -->
+            <div class="studio-panel" id="tab-cards" role="tabpanel">
+              <div class="panel-layout">
+                <div class="panel-info">
+                  <h3>Spatial Cards & Socratic AI Tutoring</h3>
+                  <p>Arrange flashcards on a spatial workspace, test retention, and converse with an AI assistant grounded directly in your selected research corpus.</p>
+                  <ul class="panel-bullets">
+                    <li>Freeform spatial card arrangement with Spaced Repetition (SRS)</li>
+                    <li>Context-aware Claude partner for difficult concepts</li>
+                    <li>Automatic card creation from reading passages</li>
+                  </ul>
                 </div>
-
-                <div class="instruments-rack">
-                    <div class="instrument-card">
-                        <div>
-                            <div class="inst-top">
-                                <span class="inst-code">RL-01</span>
-                                <span class="hud-pill">FOCUS LOCK</span>
-                            </div>
-                            <h3 class="inst-title">Latch</h3>
-                            <p class="inst-desc">
-                                Commit to a single desktop workspace. Desktop utility and browser companion that intercepts involuntary tab drifting and locks attention to intentional work.
-                            </p>
-                        </div>
-                        <div class="inst-action-row">
-                            <span class="inst-pill">Desktop + Chrome</span>
-                            <a href="mailto:founders@resistancelabs.tech?subject=Request%20RL-01%20Latch%20Access" class="inst-link">
-                                <span>Request Access</span>
-                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="instrument-card">
-                        <div>
-                            <div class="inst-top">
-                                <span class="inst-code">RL-02</span>
-                                <span class="hud-pill">INHIBITORY PWA</span>
-                            </div>
-                            <h3 class="inst-title">Reclaim</h3>
-                            <p class="inst-desc">
-                                Inhibitory focus conditioning with calibrated brown-noise acoustic masking and gated work intervals designed to restore sustained executive endurance.
-                            </p>
-                        </div>
-                        <div class="inst-action-row">
-                            <span class="inst-pill">Progressive Web App</span>
-                            <a href="mailto:founders@resistancelabs.tech?subject=Request%20RL-02%20Reclaim%20Build" class="inst-link">
-                                <span>Request Build</span>
-                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
-                            </a>
-                        </div>
-                    </div>
+                <div class="panel-media">
+                  <div class="media-frame">
+                    <video src="cardview.mp4" poster="cardview-poster.webp" muted loop playsinline preload="none"></video>
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
 
-        <!-- Section 03: Product & Engineering Principles -->
-        <section id="principles" class="section principles-section">
-            <div class="container">
-                <div class="section-head">
-                    <p class="section-kicker">03 / Engineering Principles</p>
-                    <h2 class="section-title">How we design software differently.</h2>
-                    <p class="section-desc">
-                        Conventional consumer tech monetizes surveillance and compulsive retention. We build on open formats, bounded sessions, and local-first data ownership.
-                    </p>
+            <!-- Panel 5: YouTube Quiz -->
+            <div class="studio-panel" id="tab-youtube" role="tabpanel">
+              <div class="panel-layout">
+                <div class="panel-info">
+                  <h3>Active Video Lectures & AI Quiz</h3>
+                  <p>Stop watching videos passively. ATLAS inspects transcripts in real time to generate comprehension checks, key takeaway summaries, and quiz questions as you watch.</p>
+                  <ul class="panel-bullets">
+                    <li>Interactive YouTube video player with transcript sync</li>
+                    <li>Real-time transcript analysis & AI quizzes via Claude</li>
+                    <li>Timestamped bookmarking directly into notes</li>
+                  </ul>
                 </div>
-
-                <div class="principles-grid">
-                    <div class="principle-box">
-                        <span class="principle-num">01 / LOCAL-FIRST</span>
-                        <h3>User-Owned Disk Storage</h3>
-                        <p>User files and databases reside on local disk in standard SQLite and Markdown formats. Zero proprietary cloud lock-in.</p>
-                    </div>
-
-                    <div class="principle-box">
-                        <span class="principle-num">02 / BOUNDED SESSIONS</span>
-                        <h3>Finite Software Boundaries</h3>
-                        <p>Applications engineered with deliberate completion points. Built to be closed so users can return to real life.</p>
-                    </div>
-
-                    <div class="principle-box">
-                        <span class="principle-num">03 / HUMAN-SCALE</span>
-                        <h3>Capped Cohorts</h3>
-                        <p>1,000-seat community rooms that preserve real human identities and nuanced conversation rather than infinite algorithmic feeds.</p>
-                    </div>
-
-                    <div class="principle-box">
-                        <span class="principle-num">04 / PRIVATE AI</span>
-                        <h3>User-Directed Intelligence</h3>
-                        <p>Language models run to synthesize knowledge on user request without harvesting, storing, or training on personal archives.</p>
-                    </div>
+                <div class="panel-media">
+                  <div class="media-frame">
+                    <video src="youtubeaiquiz.mp4" poster="youtubeaiquiz-poster.webp" muted loop playsinline preload="none"></video>
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
 
-        <!-- Section 04: Company & Team Dossier -->
-        <section id="company" class="section company-section">
-            <div class="container">
-                <div class="company-dossier">
-                    <div class="dossier-intro">
-                        <p class="section-kicker">04 / Company Profile & Team</p>
-                        <h2>Independent, bootstrapped, and founder-led.</h2>
-                        <p>
-                            Resistance Labs was founded in January 2026 in Amman, Jordan. We are a self-funded software studio building local-first knowledge systems and calm social platforms.
-                        </p>
-                    </div>
-
-                    <div class="dossier-grid">
-                        <div class="dossier-col">
-                            <h4>Studio Profile</h4>
-                            <p><strong>Founded:</strong> January 2026</p>
-                            <p><strong>Structure:</strong> Bootstrapped Studio</p>
-                            <p><strong>Headquarters:</strong> Amman, Jordan</p>
-                        </div>
-
-                        <div class="dossier-col">
-                            <h4>Founder & Engineering</h4>
-                            <p><strong>Abdallah Arabi</strong></p>
-                            <p>Founder & Lead Systems Engineer</p>
-                            <a href="mailto:abdallah@resistancelabs.tech">abdallah@resistancelabs.tech</a>
-                        </div>
-
-                        <div class="dossier-col">
-                            <h4>Business Model</h4>
-                            <p>Funded by direct software subscriptions and optional cloud add-ons. Because our applications store data locally on user machines, infrastructure overhead remains minimal while users retain full ownership of their work.</p>
-                        </div>
-
-                        <div class="dossier-col">
-                            <h4>Inquiries & Network</h4>
-                            <p>Partnerships & corporate verification:</p>
-                            <a href="mailto:founders@resistancelabs.tech">founders@resistancelabs.tech</a>
-                            <div style="margin-top: 0.65rem;">
-                                <a href="https://www.linkedin.com/company/resistancelabs" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.84rem; color: var(--text-secondary); text-decoration: none;">
-                                    <svg viewBox="0 0 24 24" width="13" height="13" fill="#0a66c2"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
-                                    <span style="text-decoration: underline;">LinkedIn Profile</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="dossier-action-bar">
-                        <span class="founder-signature">Resistance Labs · Operating from Amman, Jordan</span>
-                        <div style="display: flex; gap: 0.75rem; align-items: center; flex-wrap: wrap;">
-                            <a href="https://www.linkedin.com/company/resistancelabs" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-                                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
-                                </svg>
-                                <span>LinkedIn</span>
-                            </a>
-                            <a href="mailto:founders@resistancelabs.tech" class="btn btn-vermilion">
-                                <span>Contact Founders</span>
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
-                                    <line x1="22" y1="2" x2="11" y2="13"></line>
-                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
+            <!-- Panel 6: Publishing -->
+            <div class="studio-panel" id="tab-publish" role="tabpanel">
+              <div class="panel-layout">
+                <div class="panel-info">
+                  <h3>One-Click Web Publishing</h3>
+                  <p>Turn any topic, synthesis, or document into a clean, publishable web page. Share your research with colleagues or students without leaving your desktop app.</p>
+                  <ul class="panel-bullets">
+                    <li>Clean web output generation</li>
+                    <li>Preserves markdown formatting, media, and diagrams</li>
+                    <li>No complex web hosting configuration required</li>
+                  </ul>
                 </div>
+                <div class="panel-media">
+                  <div class="media-frame">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 768px)" srcset="publishtopics-mobile.webp">
+                      <source type="image/webp" srcset="publishtopics.webp">
+                      <img src="publishtopics.webp" alt="Publishing notes from ATLAS Workspace" loading="lazy" decoding="async" width="800" height="500" />
+                    </picture>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Core Capabilities Grid Section -->
+      <section class="capabilities-section" id="capabilities">
+        <div class="section-container">
+          <div class="section-header text-center">
+            <h2 class="section-title">Everything you need to master complex subjects</h2>
+            <p class="section-subtitle">Engineered for depth, speed, and long-term retention.</p>
+          </div>
+
+          <div class="capabilities-grid">
+            <div class="capability-card">
+              <div class="capability-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+              </div>
+              <h3>100% Local-First &amp; Private</h3>
+              <p>Your notes, PDFs, and data stay on your device file system. Complete control, zero lock-in, and offline reliability.</p>
+              <div class="path-display">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                <span>~/vault/topics/local-storage</span>
+              </div>
+            </div>
+
+            <div class="capability-card">
+              <div class="capability-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21.5 2v6h-6"></path>
+                  <path d="M2.5 22v-6h6"></path>
+                  <path d="M2 11.5a10 10 0 0 1 18.8-4.3L21.5 8"></path>
+                  <path d="M22 12.5a10 10 0 0 1-18.8 4.2L2.5 16"></path>
+                </svg>
+              </div>
+              <h3>Spaced Repetition (SRS)</h3>
+              <p>Built-in review scheduling calculates optimal review intervals so you never forget crucial knowledge items.</p>
+            </div>
+
+            <div class="capability-card">
+              <div class="capability-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 7 4 4 20 4 20 7"></polyline><line x1="9" y1="20" x2="15" y2="20"></line><line x1="12" y1="4" x2="12" y2="20"></line></svg>
+              </div>
+              <h3>Rich Markdown &amp; Math</h3>
+              <p>Full support for GitHub Flavored Markdown, LaTeX math formatting, code blocks with syntax highlighting, and media embeds.</p>
+            </div>
+
+            <div class="capability-card">
+              <div class="capability-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+              </div>
+              <h3>Exam &amp; Quiz Generator</h3>
+              <p>Generate practice tests automatically from selected topics and documents to test your comprehension under exam-like conditions.</p>
+            </div>
+
+            <div class="capability-card">
+              <div class="capability-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+              </div>
+              <h3>Plugins &amp; Marketplace</h3>
+              <p>Extend ATLAS with custom plugins, community-created study packs, and specialized research tools.</p>
+            </div>
+
+            <div class="capability-card">
+              <div class="capability-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+              </div>
+              <h3>Custom Routines &amp; Planning</h3>
+              <p>Organize daily study goals, track review streaks, and maintain steady momentum across long-term research projects.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Pricing & Plans Section -->
+      <section class="pricing-section" id="pricing">
+        <div class="section-container text-center">
+          <h2 class="section-title">Transparent, Sovereign Licensing</h2>
+          <p class="section-subtitle">Use the complete offline desktop core for free forever, or upgrade to Pro for deep Claude AI document reasoning.</p>
+
+          <div class="pricing-grid">
+            <!-- Core Free Tier -->
+            <div class="pricing-card">
+              <div>
+                <div class="pricing-tier-name">CORE EDITION</div>
+                <div class="pricing-price">
+                  <span>$0</span>
+                  <span class="pricing-cadence">/ forever</span>
+                </div>
+                <p class="pricing-desc">Complete offline desktop sovereignty for solo students, researchers, and writers.</p>
+                
+                <ul class="pricing-features">
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Unlimited local SQLite & Markdown notes</span>
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>3D spatial knowledge graph visualization</span>
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Native PDF & EPUB reader with margin annotations</span>
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Freehand drawing canvas & visual diagrams</span>
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Spaced Repetition (SRS) flashcard engine</span>
+                  </li>
+                </ul>
+              </div>
+              
+              <a href="#download" class="btn-pricing btn-pricing-secondary">
+                <span>Download Core Free</span>
+              </a>
+            </div>
+
+            <!-- ATLAS Pro Tier -->
+            <div class="pricing-card pricing-card-featured">
+              <span class="pricing-badge-pro">CLAUDE AI POWERED</span>
+              <div>
+                <div class="pricing-tier-name" style="color: #ff5a3c;">ATLAS PRO</div>
+                <div class="pricing-price">
+                  <span>$12</span>
+                  <span class="pricing-cadence">/ month</span>
+                </div>
+                <p class="pricing-desc">For power researchers synthesizing dense paper archives, lecture videos, and monographs.</p>
+                
+                <ul class="pricing-features">
+                  <li class="pro-highlight">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span><strong>Multi-Document Claude Synthesis:</strong> Semantic literature queries across your entire paper archive</span>
+                  </li>
+                  <li class="pro-highlight">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span><strong>Interactive Video Lectures:</strong> Automatic transcript comprehension checks & quizzes from YouTube</span>
+                  </li>
+                  <li class="pro-highlight">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span><strong>AI Flashcards from Notes:</strong> Generate active-recall card decks directly from highlighted passages</span>
+                  </li>
+                  <li class="pro-highlight">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span><strong>Card Chat & Examination:</strong> Interactive Socratic tutoring per card and automated practice exams</span>
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Priority model throughput and prompt cache acceleration</span>
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Encrypted end-to-end cloud sync across desktop clients</span>
+                  </li>
+                </ul>
+              </div>
+              
+              <a href="#download" class="btn-pricing btn-pricing-pro">
+                <span>Get Started with Pro</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Download Section -->
+      <section class="download-section" id="download">
+        <div class="section-container text-center">
+          <h2 class="section-title">Download ATLAS Workspace for Desktop</h2>
+          <p class="section-subtitle">Start building your personal knowledge system today. Available for Windows, macOS, and Linux.</p>
+
+          <div class="download-grid" id="download-options">
+            <a href="https://github.com/Resistance-Labs-Tech/atlasface/releases/download/v0.0.50/ATLASFace-Setup-0.0.50.exe" class="download-card primary" data-download-kind="windows-installer" download>
+              <div class="download-card-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 4.5 10.8 3.4v7.9H3V4.5Zm9.4-1.4L21 2v9.3h-8.6V3.1ZM3 12.7h7.8v7.9L3 19.5v-6.8Zm9.4 0H21V22l-8.6-1.2v-8.1Z"/></svg>
+              </div>
+              <div class="download-card-text">
+                <span class="platform-name">Windows</span>
+                <strong>64-bit Installer (.exe)</strong>
+              </div>
+            </a>
+
+            <a href="https://github.com/Resistance-Labs-Tech/atlasface/releases/download/v0.0.50/ATLASFace-0.0.50-arm64.dmg" class="download-card" data-download-kind="macos-arm64" download>
+              <div class="download-card-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 2.2c.1 1.1-.4 2.2-1.2 3-.8.8-1.9 1.3-3 1.2-.1-1 .4-2.1 1.2-2.9.8-.8 2-1.3 3-1.3Zm3.6 15.5c-.5 1.1-.8 1.6-1.5 2.6-1 1.5-2.5 3.3-4.3 3.3-1.6 0-2-.9-4.1-.9-2.2 0-2.6.9-4.2.9-1.8 0-3.2-1.7-4.2-3.2C-.4 16.6-.8 10.1 3.3 7.5c1.3-.8 2.9-.9 4.3-.4.8.3 1.5.7 2.7.7 1.1 0 1.8-.4 2.7-.7 1.5-.5 3.3-.4 4.6.5-4 2.2-3.3 8.1 2.6 10.1Z"/></svg>
+              </div>
+              <div class="download-card-text">
+                <span class="platform-name">macOS</span>
+                <strong>Apple Silicon (.dmg)</strong>
+              </div>
+            </a>
+
+            <a href="https://github.com/Resistance-Labs-Tech/atlasface/releases/download/v0.0.50/ATLASFace-0.0.50-x64.dmg" class="download-card" data-download-kind="macos-x64" download>
+              <div class="download-card-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 2.2c.1 1.1-.4 2.2-1.2 3-.8.8-1.9 1.3-3 1.2-.1-1 .4-2.1 1.2-2.9.8-.8 2-1.3 3-1.3Zm3.6 15.5c-.5 1.1-.8 1.6-1.5 2.6-1 1.5-2.5 3.3-4.3 3.3-1.6 0-2-.9-4.1-.9-2.2 0-2.6.9-4.2.9-1.8 0-3.2-1.7-4.2-3.2C-.4 16.6-.8 10.1 3.3 7.5c1.3-.8 2.9-.9 4.3-.4.8.3 1.5.7 2.7.7 1.1 0 1.8-.4 2.7-.7 1.5-.5 3.3-.4 4.6.5-4 2.2-3.3 8.1 2.6 10.1Z"/></svg>
+              </div>
+              <div class="download-card-text">
+                <span class="platform-name">macOS</span>
+                <strong>Intel Architecture (.dmg)</strong>
+              </div>
+            </a>
+
+            <a href="https://github.com/Resistance-Labs-Tech/atlasface/releases/download/v0.0.50/ATLASFace-0.0.50.AppImage" class="download-card" data-download-kind="linux-appimage" download>
+              <div class="download-card-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5c-2.8 0-4.9 2.4-4.9 5.7 0 1.4-.4 2.7-1.1 4L3.4 17c-.6 1.2.1 2.7 1.4 2.9l3.7.7c.8.6 2 .9 3.5.9s2.7-.3 3.5-.9l3.7-.7c1.3-.2 2-1.7 1.4-2.9L18 12.2c-.7-1.3-1.1-2.6-1.1-4 0-3.3-2.1-5.7-4.9-5.7Zm-2.1 7c-.5 0-.9-.5-.9-1s.4-1 .9-1 .9.5.9 1-.4 1-.9 1Zm4.2 0c-.5 0-.9-.5-.9-1s.4-1 .9-1 .9.5.9 1-.4 1-.9 1Zm-2.1 1.7 1.5 1.3-1.5.9-1.5-.9 1.5-1.3Z"/></svg>
+              </div>
+              <div class="download-card-text">
+                <span class="platform-name">Linux</span>
+                <strong>AppImage Binary</strong>
+              </div>
+            </a>
+
+            <a href="https://github.com/Resistance-Labs-Tech/atlasface/releases/download/v0.0.50/ATLASFace-0.0.50.deb" class="download-card" data-download-kind="linux-deb" download>
+              <div class="download-card-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5c-2.8 0-4.9 2.4-4.9 5.7 0 1.4-.4 2.7-1.1 4L3.4 17c-.6 1.2.1 2.7 1.4 2.9l3.7.7c.8.6 2 .9 3.5.9s2.7-.3 3.5-.9l3.7-.7c1.3-.2 2-1.7 1.4-2.9L18 12.2c-.7-1.3-1.1-2.6-1.1-4 0-3.3-2.1-5.7-4.9-5.7Zm-2.1 7c-.5 0-.9-.5-.9-1s.4-1 .9-1 .9.5.9 1-.4 1-.9 1Zm4.2 0c-.5 0-.9-.5-.9-1s.4-1 .9-1 .9.5.9 1-.4 1-.9 1Zm-2.1 1.7 1.5 1.3-1.5.9-1.5-.9 1.5-1.3Z"/></svg>
+              </div>
+              <div class="download-card-text">
+                <span class="platform-name">Linux</span>
+                <strong>Debian / Ubuntu Package (.deb)</strong>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Community CTA Section -->
+      <section class="community-cta-section">
+        <div class="section-container">
+          <div class="community-card">
+            <div class="community-card-content">
+              <div class="community-badge-top">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.32 4.37A19.8 19.8 0 0 0 15.36 2.8a13.8 13.8 0 0 0-.64 1.33 18.27 18.27 0 0 0-5.44 0 13.8 13.8 0 0 0-.64-1.33 19.8 19.8 0 0 0-4.96 1.57C.54 9.09-.32 13.7.1 18.25a19.9 19.9 0 0 0 6.08 3.05 14.7 14.7 0 0 0 1.3-2.1 12.9 12.9 0 0 1-2.05-.98c.17-.12.34-.25.5-.38a14.1 14.1 0 0 0 12.14 0c.16.13.33.26.5.38-.65.38-1.33.71-2.05.98.37.73.8 1.43 1.3 2.1a19.9 19.9 0 0 0 6.08-3.05c.5-5.27-.85-9.84-3.58-13.88ZM8.03 15.46c-1.18 0-2.16-1.1-2.16-2.44 0-1.35.96-2.45 2.16-2.45 1.2 0 2.18 1.11 2.16 2.45 0 1.35-.96 2.44-2.16 2.44Zm7.94 0c-1.18 0-2.16-1.1-2.16-2.44 0-1.35.96-2.45 2.16-2.45 1.2 0 2.18 1.11 2.16 2.45 0 1.35-.96 2.44-2.16 2.44Z"/></svg>
+                <span>Community &amp; Open Development</span>
+              </div>
+              <h2>Join the ATLAS Community</h2>
+              <p>Share study decks, suggest features, test new builds, and discuss learning workflows directly with the developers and other researchers.</p>
+              <div class="community-card-actions">
+                <a href="https://discord.com/invite/Y2RJkDJRW2" target="_blank" rel="noopener" class="btn-primary btn-lg">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20.32 4.37A19.8 19.8 0 0 0 15.36 2.8a13.8 13.8 0 0 0-.64 1.33 18.27 18.27 0 0 0-5.44 0 13.8 13.8 0 0 0-.64-1.33 19.8 19.8 0 0 0-4.96 1.57C.54 9.09-.32 13.7.1 18.25a19.9 19.9 0 0 0 6.08 3.05 14.7 14.7 0 0 0 1.3-2.1 12.9 12.9 0 0 1-2.05-.98c.17-.12.34-.25.5-.38a14.1 14.1 0 0 0 12.14 0c.16.13.33.26.5.38-.65.38-1.33.71-2.05.98.37.73.8 1.43 1.3 2.1a19.9 19.9 0 0 0 6.08-3.05c.5-5.27-.85-9.84-3.58-13.88ZM8.03 15.46c-1.18 0-2.16-1.1-2.16-2.44 0-1.35.96-2.45 2.16-2.45 1.2 0 2.18 1.11 2.16 2.45 0 1.35-.96 2.44-2.16 2.44Zm7.94 0c-1.18 0-2.16-1.1-2.16-2.44 0-1.35.96-2.45 2.16-2.45 1.2 0 2.18 1.11 2.16 2.45 0 1.35-.96 2.44-2.16 2.44Z"/></svg>
+                  <span>Join Discord</span>
+                </a>
+                <a href="https://github.com/Resistance-Labs-Tech/atlasface" target="_blank" rel="noopener" class="btn-secondary btn-lg">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                  <span>GitHub Repository</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <!-- Global Footer -->
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-layout">
-                <div class="footer-brand-block">
-                    <div class="brand-lockup">
-                        <span class="brand-icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
-                                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
-                                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
-                                <line x1="10" y1="14" x2="14" y2="10" stroke="var(--accent-vermilion)" stroke-width="2.5"></line>
-                            </svg>
-                        </span>
-                        <span class="brand-title">Resistance Labs</span>
-                    </div>
-                    <p class="footer-bio">
-                        Independent software studio building local-first knowledge systems and calm social platforms.
-                    </p>
-                </div>
-
-                <div class="footer-col">
-                    <h5>Products</h5>
-                    <ul>
-                        <li><a href="#atlas">ATLAS Workspace (v1.0.32)</a></li>
-                        <li><a href="https://suntown.town/" target="_blank" rel="noopener noreferrer">Suntown (14:00 UTC)</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h5>Architecture</h5>
-                    <ul>
-                        <li><a href="#principles">Engineering Principles</a></li>
-                        <li><a href="#instruments">Instruments Rack</a></li>
-                        <li><a href="llms.txt" target="_blank" rel="noopener noreferrer">Machine Context (llms.txt)</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h5>Contact</h5>
-                    <ul>
-                        <li><a href="mailto:founders@resistancelabs.tech">founders@resistancelabs.tech</a></li>
-                        <li><a href="mailto:abdallah@resistancelabs.tech">abdallah@resistancelabs.tech</a></li>
-                        <li>
-                            <a href="https://www.linkedin.com/company/resistancelabs" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 0.4rem;">
-                                <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
-                                <span>LinkedIn</span>
-                            </a>
-                        </li>
-                        <li><a href="#company">Amman, Jordan</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <span>© 2026 Resistance Labs. All rights reserved.</span>
-                <span>Bootstrapped Software Studio · Zero Ad-Tech</span>
-            </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <img src="final.webp" alt="ATLAS Workspace" width="28" height="28" loading="lazy" decoding="async" />
+          <span class="footer-brand-name">ATLAS Workspace</span>
+          <span class="footer-copy">&copy; 2026 Resistance Labs. All rights reserved.</span>
+          <p class="footer-studio-info">
+            ATLAS is engineered and published by <strong>Resistance Labs</strong>, an independent software studio in Amman, Jordan.<br>
+            Corporate registry &amp; inquiries: <a href="mailto:abdallah@resistancelabs.tech">abdallah@resistancelabs.tech</a> · <a href="https://www.linkedin.com/company/resistancelabs" target="_blank" rel="noopener noreferrer">LinkedIn Verification</a>
+          </p>
         </div>
+        <div class="footer-links">
+          <a href="#features">Features</a>
+          <a href="#pricing">Pricing</a>
+          <a href="docs.html">Documentation</a>
+          <a href="marketplace.html">Marketplace</a>
+          <a href="https://github.com/Resistance-Labs-Tech/atlasface" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://discord.com/invite/Y2RJkDJRW2" target="_blank" rel="noopener">Discord</a>
+        </div>
+      </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
-
 </html>

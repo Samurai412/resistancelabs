@@ -1,15 +1,17 @@
 # Resistance Labs
 
-Official website and public registry for Resistance Labs: [resistancelabs.tech](https://resistancelabs.tech/).
+Official repository and website for **Resistance Labs**: [resistancelabs.tech](https://resistancelabs.tech/).
 
-Counter-extractive software designed to restore human cognitive sovereignty, attention span, and community dignity.
+Resistance Labs is an independent software studio building commercial tools for knowledge workers, researchers, and learners.
 
-## Products & Instruments
+## Flagship Product: ATLAS Workspace
 
-- **ATLAS Workspace**: Local-first personal knowledge system with 3D spatial vector graph, EPUB/PDF reader, and Claude AI synthesis. [resistancelabs.tech/#atlas](https://resistancelabs.tech/#atlas)
-- **Suntown**: Moderated daily social room operating on a single 4-hour Golden Hour (14:00–18:00 UTC) with Claude admissions screening. [suntown.town](https://suntown.town/)
-- **RL-01 Latch**: Commitment timer and distraction blocker for desktop & browser.
-- **RL-02 Reclaim**: Inhibitory focus trainer using synthetic brown-noise acoustic masking.
+**ATLAS Workspace** is a local-first personal knowledge system with a 3D spatial vector graph, native EPUB/PDF reader, freehand visual canvas, and deep Claude AI synthesis.
+
+- **Website & Portal**: [resistancelabs.tech](https://resistancelabs.tech/)
+- **Documentation**: [resistancelabs.tech/docs.html](https://resistancelabs.tech/docs.html)
+- **Community Marketplace**: [resistancelabs.tech/marketplace.html](https://resistancelabs.tech/marketplace.html)
+- **Desktop Releases**: Windows (.exe), macOS Apple Silicon & Intel (.dmg), Linux (.AppImage, .deb)
 
 ## Machine Context
 
